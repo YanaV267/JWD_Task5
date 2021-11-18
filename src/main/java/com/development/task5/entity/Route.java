@@ -17,9 +17,9 @@ public class Route {
     private static final String BUS_STOP_CAPACITY_PROPERTY = "bus_stop_capacity";
     private static final AtomicBoolean isInitialised = new AtomicBoolean(false);
     private final Lock lock = new ReentrantLock();
-    private final Condition condition = lock.newCondition();
-    private final Deque<BusStop> availableBusStops = new ArrayDeque<>();
-    private final Deque<BusStop> occupiedBusStops = new ArrayDeque<>();
+    private final Map<Long, Condition> conditions = new HashMap<>();
+    private final List<BusStop> availableBusStops = new ArrayList<>();
+    private final List<BusStop> occupiedBusStops = new ArrayList<>();
     private final int BUS_STOP_AMOUNT;
     private static Route instance;
 
@@ -35,6 +35,7 @@ public class Route {
         for (int i = 0; i < BUS_STOP_AMOUNT; i++) {
             BusStop busStop = new BusStop(busStopCapacity);
             availableBusStops.add(busStop);
+            conditions.put(busStop.getBusStopId(), lock.newCondition());
         }
     }
 
@@ -50,17 +51,29 @@ public class Route {
     public BusStop obtainBusStop(long busStopNumber) {
         try {
             lock.lock();
+            BusStop busStop = availableBusStops.stream()
+                    .filter(s -> s.getBusStopId() == busStopNumber)
+                    .findFirst()
+                    .orElse(null);
             try {
-                if (availableBusStops.isEmpty()) {
-                    LOGGER.info("All bus stops are currently occupied");
-                    condition.await();
+                if (busStop == null) {
+                    LOGGER.info("Bus stop {} is currently occupied", busStopNumber);
+                    conditions.get(busStopNumber).await();
+                    busStop = availableBusStops.stream()
+                            .filter(s -> s.getBusStopId() == busStopNumber)
+                            .findFirst()
+                            .get();
                 }
             } catch (InterruptedException exception) {
                 LOGGER.error("Error was found while processing a bus route: " + exception);
                 Thread.currentThread().interrupt();
             }
-            BusStop busStop = availableBusStops.removeFirst();
-            occupiedBusStops.addLast(busStop);
+            busStop.setCurrentCapacity(busStop.getCurrentCapacity() + 1);
+            availableBusStops.set(availableBusStops.indexOf(busStop), busStop);
+            if (busStop.getCurrentCapacity() >= busStop.getMaxCapacity()) {
+                availableBusStops.remove(busStop);
+                occupiedBusStops.add(busStop);
+            }
             return busStop;
         } finally {
             lock.unlock();
@@ -70,9 +83,15 @@ public class Route {
     public void releaseBusStop(BusStop busStop) {
         try {
             lock.lock();
-            occupiedBusStops.remove(busStop);
-            availableBusStops.addLast(busStop);
-            condition.signal();
+            if (availableBusStops.contains(busStop)) {
+                busStop.setCurrentCapacity(busStop.getCurrentCapacity() - 1);
+                availableBusStops.set(availableBusStops.indexOf(busStop), busStop);
+            } else {
+                occupiedBusStops.remove(busStop);
+                availableBusStops.add(busStop);
+                conditions.get(busStop.getBusStopId()).signal();
+                LOGGER.info("Bus stop {} is available now", busStop.getBusStopId());
+            }
         } finally {
             lock.unlock();
         }
@@ -90,6 +109,4 @@ public class Route {
         bus.setCurrentPeopleAmount(bus.getCurrentPeopleAmount() + increasedPeopleAmount);
         LOGGER.info("{} people got on the bus {}", increasedPeopleAmount, bus.getBusId());
     }
-
-
 }

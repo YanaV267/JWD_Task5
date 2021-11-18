@@ -48,13 +48,15 @@ public class Bus implements Runnable {
         state = State.RUNNING;
 
         Route route = Route.getInstance();
-            BusStop busStop = route.obtainBusStop(busStopNumbers.get(0));
+        for (long busStopNumber : busStopNumbers) {
+            BusStop busStop = route.obtainBusStop(busStopNumber);
             LOGGER.info("Bus {} arrived to a bus stop {} with {} people", busId, busStop.getBusStopId(), currentPeopleAmount);
 
             busStop.processBus(this);
 
             route.releaseBusStop(busStop);
             LOGGER.info("Bus {} drove away from a bus stop {} with {} people", busId, busStop.getBusStopId(), currentPeopleAmount);
+        }
 
         LOGGER.info("Bus {} completed its route", busId);
         state = State.COMPLETED;
