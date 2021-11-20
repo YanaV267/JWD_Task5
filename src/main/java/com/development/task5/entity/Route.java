@@ -5,6 +5,7 @@ import org.apache.logging.log4j.Logger;
 
 import java.io.IOException;
 import java.util.*;
+import java.util.concurrent.Semaphore;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
@@ -16,14 +17,15 @@ public class Route {
     private static final String BUS_STOP_AMOUNT_PROPERTY = "bus_stop_amount";
     private static final String BUS_STOP_CAPACITY_PROPERTY = "bus_stop_capacity";
     private static final AtomicBoolean isInitialised = new AtomicBoolean(false);
-    private final Lock lock = new ReentrantLock();
+    private final Map<Long, Lock> locks = new HashMap<>();
     private final Map<Long, Condition> conditions = new HashMap<>();
     private final List<BusStop> availableBusStops = new ArrayList<>();
     private final List<BusStop> occupiedBusStops = new ArrayList<>();
     private final int BUS_STOP_AMOUNT;
+    private final Map<Long, Semaphore> semaphores = new HashMap<>();
     private static Route instance;
 
-    public Route() {
+    private Route() {
         Properties properties = new Properties();
         try {
             properties.load(getClass().getClassLoader().getResourceAsStream(RESOURCE_FILE_NAME));
@@ -35,7 +37,9 @@ public class Route {
         for (int i = 0; i < BUS_STOP_AMOUNT; i++) {
             BusStop busStop = new BusStop(busStopCapacity);
             availableBusStops.add(busStop);
-            conditions.put(busStop.getBusStopId(), lock.newCondition());
+            locks.put(busStop.getBusStopId(), new ReentrantLock());
+            conditions.put(busStop.getBusStopId(), locks.get(busStop.getBusStopId()).newCondition());
+            semaphores.put(busStop.getBusStopId(), new Semaphore(busStop.getMaxBusCapacity(), true));
         }
     }
 
@@ -50,63 +54,59 @@ public class Route {
 
     public BusStop obtainBusStop(long busStopNumber) {
         try {
-            lock.lock();
-            BusStop busStop = availableBusStops.stream()
-                    .filter(s -> s.getBusStopId() == busStopNumber)
-                    .findFirst()
-                    .orElse(null);
+            locks.get(busStopNumber).lock();
+            BusStop busStop = null;
             try {
-                if (busStop == null) {
+                while (!semaphores.get(busStopNumber).tryAcquire()) {
                     LOGGER.info("Bus stop {} is currently occupied", busStopNumber);
                     conditions.get(busStopNumber).await();
-                    busStop = availableBusStops.stream()
-                            .filter(s -> s.getBusStopId() == busStopNumber)
-                            .findFirst()
-                            .get();
                 }
+                busStop = availableBusStops.stream()
+                        .filter(s -> s.getBusStopId() == busStopNumber)
+                        .findFirst()
+                        .get();
             } catch (InterruptedException exception) {
                 LOGGER.error("Error was found while processing a bus route: " + exception);
                 Thread.currentThread().interrupt();
             }
-            busStop.setCurrentCapacity(busStop.getCurrentCapacity() + 1);
-            availableBusStops.set(availableBusStops.indexOf(busStop), busStop);
-            if (busStop.getCurrentCapacity() >= busStop.getMaxCapacity()) {
+            if (semaphores.get(busStopNumber).availablePermits() == 0) {
                 availableBusStops.remove(busStop);
                 occupiedBusStops.add(busStop);
             }
             return busStop;
         } finally {
-            lock.unlock();
+            locks.get(busStopNumber).unlock();
         }
     }
 
     public void releaseBusStop(BusStop busStop) {
         try {
-            lock.lock();
-            if (availableBusStops.contains(busStop)) {
-                busStop.setCurrentCapacity(busStop.getCurrentCapacity() - 1);
-                availableBusStops.set(availableBusStops.indexOf(busStop), busStop);
-            } else {
+            locks.get(busStop.getBusStopId()).lock();
+            semaphores.get(busStop.getBusStopId()).release();
+            if (!availableBusStops.contains(busStop)) {
                 occupiedBusStops.remove(busStop);
                 availableBusStops.add(busStop);
-                conditions.get(busStop.getBusStopId()).signal();
+                conditions.get(busStop.getBusStopId()).signalAll();
                 LOGGER.info("Bus stop {} is available now", busStop.getBusStopId());
             }
         } finally {
-            lock.unlock();
+            locks.get(busStop.getBusStopId()).unlock();
         }
     }
 
-    public void getPeopleOffBus(Bus bus) {
-        int decreasedPeopleAmount = new Random().nextInt(bus.getCurrentPeopleAmount() - 1);
+    public int getPeopleOffBus(Bus bus) {
+        int decreasedPeopleAmount = new Random().nextInt(bus.getCurrentPeopleAmount() + 1);
         bus.setCurrentPeopleAmount(bus.getCurrentPeopleAmount() - decreasedPeopleAmount);
         LOGGER.info("{} people got off the bus {}", decreasedPeopleAmount, bus.getBusId());
+        return decreasedPeopleAmount;
     }
 
-    public void getPeopleOnBus(Bus bus) {
+    public int getPeopleOnBus(Bus bus, BusStop busStop) {
         int availableSeatsAmount = bus.getMaxCapacity() - bus.getCurrentPeopleAmount();
-        int increasedPeopleAmount = new Random().nextInt(availableSeatsAmount - 1);
+        int maxPossiblePeopleAmount = Math.min(busStop.getCurrentPeopleAmount(), availableSeatsAmount);
+        int increasedPeopleAmount = new Random().nextInt(maxPossiblePeopleAmount + 1);
         bus.setCurrentPeopleAmount(bus.getCurrentPeopleAmount() + increasedPeopleAmount);
         LOGGER.info("{} people got on the bus {}", increasedPeopleAmount, bus.getBusId());
+        return increasedPeopleAmount;
     }
 }

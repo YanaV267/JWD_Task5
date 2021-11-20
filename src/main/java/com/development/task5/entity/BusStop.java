@@ -11,33 +11,34 @@ public class BusStop {
     private static final Logger LOGGER = LogManager.getLogger();
     private static final int MIN_TIMEOUT = 1;
     private static final int MAX_TIMEOUT = 10;
-    private final int MAX_CAPACITY;
     private final long busStopId;
-    private int currentCapacity;
+    private final int MAX_BUS_CAPACITY;
+    private int currentPeopleAmount;
 
-    public BusStop(int maxCapacity) {
-        MAX_CAPACITY = maxCapacity;
+    public BusStop(int maxBusCapacity) {
+        MAX_BUS_CAPACITY = maxBusCapacity;
         busStopId = BusStopIdGenerator.generateId();
+        currentPeopleAmount = new Random().nextInt(40) + 1;
     }
 
     public long getBusStopId() {
         return busStopId;
     }
 
-    public int getMaxCapacity() {
-        return MAX_CAPACITY;
+    public int getMaxBusCapacity() {
+        return MAX_BUS_CAPACITY;
     }
 
-    public int getCurrentCapacity() {
-        return currentCapacity;
-    }
-
-    public void setCurrentCapacity(int currentCapacity) {
-        this.currentCapacity = currentCapacity;
+    public int getCurrentPeopleAmount() {
+        return currentPeopleAmount;
     }
 
     public void processBus(Bus bus) {
         LOGGER.info("Bus stop {} is processing by bus {}", busStopId, bus.getBusId());
+        Route route = Route.getInstance();
+        currentPeopleAmount += route.getPeopleOffBus(bus);
+        currentPeopleAmount = new Random().nextInt(currentPeopleAmount + 10 - Math.max(currentPeopleAmount - 10, 0)) + Math.max(currentPeopleAmount - 10, 0);
+        currentPeopleAmount -= route.getPeopleOnBus(bus, this);
         int timeout = new Random().nextInt(MAX_TIMEOUT - MIN_TIMEOUT) + MIN_TIMEOUT;
         try {
             TimeUnit.SECONDS.sleep(timeout);
@@ -45,9 +46,6 @@ public class BusStop {
             LOGGER.error("Error was found while processing bus {} on the bus stop {} : {}", bus.getBusId(), busStopId, exception);
             Thread.currentThread().interrupt();
         }
-        Route route = Route.getInstance();
-        route.getPeopleOffBus(bus);
-        route.getPeopleOnBus(bus);
         LOGGER.info("Bus stop {} finished processing by bus {}", busStopId, bus.getBusId());
     }
 }

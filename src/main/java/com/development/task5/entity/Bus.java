@@ -18,9 +18,9 @@ public class Bus implements Runnable {
         WAITING, RUNNING, COMPLETED
     }
 
-    public Bus(int maxCapacity, int currentCapacity, List<Long> busStopNumbers) {
+    public Bus(int maxCapacity, int currentPeopleAmount, List<Long> busStopNumbers) {
         MAX_CAPACITY = maxCapacity;
-        this.currentPeopleAmount = currentCapacity;
+        this.currentPeopleAmount = currentPeopleAmount;
         this.busStopNumbers = busStopNumbers;
         busId = BusIdGenerator.generateId();
         state = State.WAITING;
