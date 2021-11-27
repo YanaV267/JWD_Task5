@@ -1,0 +1,987 @@
+[INFO ] 2021-11-20 17:28:27.287 [pool-2-thread-5]   Bus - Bus 5 started its route
+[INFO ] 2021-11-20 17:28:27.287 [pool-2-thread-2]   Bus - Bus 2 started its route
+[INFO ] 2021-11-20 17:28:27.286 [pool-2-thread-4]   Bus - Bus 4 started its route
+[INFO ] 2021-11-20 17:28:27.285 [pool-2-thread-3]   Bus - Bus 3 started its route
+[INFO ] 2021-11-20 17:28:27.287 [pool-2-thread-1]   Bus - Bus 1 started its route
+[INFO ] 2021-11-20 17:28:27.359 [pool-2-thread-5]   Bus - Bus 5 arrived to a bus stop 2 with 15 people
+[INFO ] 2021-11-20 17:28:27.359 [pool-2-thread-5]   BusStop - Bus stop 2 is processing by bus 5
+[INFO ] 2021-11-20 17:28:27.360 [pool-2-thread-5]   Route - 8 people got off the bus 5
+[INFO ] 2021-11-20 17:28:27.360 [pool-2-thread-5]   Route - 1 people got on the bus 5
+[INFO ] 2021-11-20 17:28:27.361 [pool-2-thread-2]   Bus - Bus 2 arrived to a bus stop 3 with 27 people
+[INFO ] 2021-11-20 17:28:27.361 [pool-2-thread-2]   BusStop - Bus stop 3 is processing by bus 2
+[INFO ] 2021-11-20 17:28:27.361 [pool-2-thread-2]   Route - 18 people got off the bus 2
+[INFO ] 2021-11-20 17:28:27.361 [pool-2-thread-2]   Route - 5 people got on the bus 2
+[INFO ] 2021-11-20 17:28:27.362 [pool-2-thread-4]   Bus - Bus 4 arrived to a bus stop 3 with 18 people
+[INFO ] 2021-11-20 17:28:27.363 [pool-2-thread-4]   BusStop - Bus stop 3 is processing by bus 4
+[INFO ] 2021-11-20 17:28:27.364 [pool-2-thread-4]   Route - 9 people got off the bus 4
+[INFO ] 2021-11-20 17:28:27.364 [pool-2-thread-4]   Route - 8 people got on the bus 4
+[INFO ] 2021-11-20 17:28:27.363 [pool-2-thread-1]   Route - Bus stop 3 is currently occupied
+[INFO ] 2021-11-20 17:28:27.364 [pool-2-thread-3]   Bus - Bus 3 arrived to a bus stop 1 with 39 people
+[INFO ] 2021-11-20 17:28:27.365 [pool-2-thread-3]   BusStop - Bus stop 1 is processing by bus 3
+[INFO ] 2021-11-20 17:28:27.368 [pool-2-thread-3]   Route - 27 people got off the bus 3
+[INFO ] 2021-11-20 17:28:27.370 [pool-2-thread-3]   Route - 3 people got on the bus 3
+[INFO ] 2021-11-20 17:28:28.370 [pool-2-thread-2]   BusStop - Bus stop 3 finished processing by bus 2
+[INFO ] 2021-11-20 17:28:28.370 [pool-2-thread-2]   Route - Bus stop 3 is available now
+[INFO ] 2021-11-20 17:28:28.371 [pool-2-thread-1]   Bus - Bus 1 arrived to a bus stop 3 with 20 people
+[INFO ] 2021-11-20 17:28:28.371 [pool-2-thread-2]   Bus - Bus 2 drove away from a bus stop 3 with 14 people
+[INFO ] 2021-11-20 17:28:28.372 [pool-2-thread-1]   BusStop - Bus stop 3 is processing by bus 1
+[INFO ] 2021-11-20 17:28:28.372 [pool-2-thread-2]   Bus - Bus 2 arrived to a bus stop 1 with 14 people
+[INFO ] 2021-11-20 17:28:28.372 [pool-2-thread-1]   Route - 12 people got off the bus 1
+[INFO ] 2021-11-20 17:28:28.372 [pool-2-thread-2]   BusStop - Bus stop 1 is processing by bus 2
+[INFO ] 2021-11-20 17:28:28.372 [pool-2-thread-1]   Route - 15 people got on the bus 1
+[INFO ] 2021-11-20 17:28:28.372 [pool-2-thread-2]   Route - 2 people got off the bus 2
+[INFO ] 2021-11-20 17:28:28.373 [pool-2-thread-2]   Route - 3 people got on the bus 2
+[INFO ] 2021-11-20 17:28:31.367 [pool-2-thread-4]   BusStop - Bus stop 3 finished processing by bus 4
+[INFO ] 2021-11-20 17:28:31.368 [pool-2-thread-4]   Bus - Bus 4 drove away from a bus stop 3 with 17 people
+[INFO ] 2021-11-20 17:28:31.369 [pool-2-thread-4]   Route - Bus stop 1 is currently occupied
+[INFO ] 2021-11-20 17:28:33.372 [pool-2-thread-3]   BusStop - Bus stop 1 finished processing by bus 3
+[INFO ] 2021-11-20 17:28:33.372 [pool-2-thread-3]   Route - Bus stop 1 is available now
+[INFO ] 2021-11-20 17:28:33.373 [pool-2-thread-3]   Bus - Bus 3 drove away from a bus stop 1 with 15 people
+[INFO ] 2021-11-20 17:28:33.373 [pool-2-thread-4]   Bus - Bus 4 arrived to a bus stop 1 with 17 people
+[INFO ] 2021-11-20 17:28:33.373 [pool-2-thread-4]   BusStop - Bus stop 1 is processing by bus 4
+[INFO ] 2021-11-20 17:28:33.373 [pool-2-thread-3]   Bus - Bus 3 arrived to a bus stop 2 with 15 people
+[INFO ] 2021-11-20 17:28:33.373 [pool-2-thread-4]   Route - 10 people got off the bus 4
+[INFO ] 2021-11-20 17:28:33.373 [pool-2-thread-3]   BusStop - Bus stop 2 is processing by bus 3
+[INFO ] 2021-11-20 17:28:33.374 [pool-2-thread-4]   Route - 8 people got on the bus 4
+[INFO ] 2021-11-20 17:28:33.374 [pool-2-thread-3]   Route - 4 people got off the bus 3
+[INFO ] 2021-11-20 17:28:33.374 [pool-2-thread-3]   Route - 0 people got on the bus 3
+[INFO ] 2021-11-20 17:28:34.372 [pool-2-thread-5]   BusStop - Bus stop 2 finished processing by bus 5
+[INFO ] 2021-11-20 17:28:34.372 [pool-2-thread-5]   Route - Bus stop 2 is available now
+[INFO ] 2021-11-20 17:28:34.373 [pool-2-thread-5]   Bus - Bus 5 drove away from a bus stop 2 with 8 people
+[INFO ] 2021-11-20 17:28:34.373 [pool-2-thread-5]   Bus - Bus 5 arrived to a bus stop 3 with 8 people
+[INFO ] 2021-11-20 17:28:34.373 [pool-2-thread-5]   BusStop - Bus stop 3 is processing by bus 5
+[INFO ] 2021-11-20 17:28:34.374 [pool-2-thread-5]   Route - 1 people got off the bus 5
+[INFO ] 2021-11-20 17:28:34.374 [pool-2-thread-5]   Route - 0 people got on the bus 5
+[INFO ] 2021-11-20 17:28:34.388 [pool-2-thread-2]   BusStop - Bus stop 1 finished processing by bus 2
+[INFO ] 2021-11-20 17:28:34.388 [pool-2-thread-3]   BusStop - Bus stop 2 finished processing by bus 3
+[INFO ] 2021-11-20 17:28:34.388 [pool-2-thread-3]   Bus - Bus 3 drove away from a bus stop 2 with 11 people
+[INFO ] 2021-11-20 17:28:34.388 [pool-2-thread-2]   Bus - Bus 2 drove away from a bus stop 1 with 15 people
+[INFO ] 2021-11-20 17:28:34.389 [pool-2-thread-3]   Bus - Bus 3 arrived to a bus stop 3 with 11 people
+[INFO ] 2021-11-20 17:28:34.389 [pool-2-thread-3]   BusStop - Bus stop 3 is processing by bus 3
+[INFO ] 2021-11-20 17:28:34.389 [pool-2-thread-2]   Bus - Bus 2 arrived to a bus stop 2 with 15 people
+[INFO ] 2021-11-20 17:28:34.390 [pool-2-thread-3]   Route - 8 people got off the bus 3
+[INFO ] 2021-11-20 17:28:34.390 [pool-2-thread-2]   BusStop - Bus stop 2 is processing by bus 2
+[INFO ] 2021-11-20 17:28:34.390 [pool-2-thread-3]   Route - 3 people got on the bus 3
+[INFO ] 2021-11-20 17:28:34.390 [pool-2-thread-2]   Route - 3 people got off the bus 2
+[INFO ] 2021-11-20 17:28:34.391 [pool-2-thread-2]   Route - 32 people got on the bus 2
+[INFO ] 2021-11-20 17:28:36.398 [pool-2-thread-3]   BusStop - Bus stop 3 finished processing by bus 3
+[INFO ] 2021-11-20 17:28:36.398 [pool-2-thread-3]   Route - Bus stop 3 is available now
+[INFO ] 2021-11-20 17:28:36.399 [pool-2-thread-3]   Bus - Bus 3 drove away from a bus stop 3 with 6 people
+[INFO ] 2021-11-20 17:28:36.399 [pool-2-thread-3]   Bus - Bus 3 completed its route
+[INFO ] 2021-11-20 17:28:37.376 [pool-2-thread-1]   BusStop - Bus stop 3 finished processing by bus 1
+[INFO ] 2021-11-20 17:28:37.376 [pool-2-thread-1]   Bus - Bus 1 drove away from a bus stop 3 with 23 people
+[INFO ] 2021-11-20 17:28:37.377 [pool-2-thread-1]   Bus - Bus 1 arrived to a bus stop 2 with 23 people
+[INFO ] 2021-11-20 17:28:37.377 [pool-2-thread-1]   BusStop - Bus stop 2 is processing by bus 1
+[INFO ] 2021-11-20 17:28:37.377 [pool-2-thread-1]   Route - 19 people got off the bus 1
+[INFO ] 2021-11-20 17:28:37.378 [pool-2-thread-1]   Route - 10 people got on the bus 1
+[INFO ] 2021-11-20 17:28:38.388 [pool-2-thread-4]   BusStop - Bus stop 1 finished processing by bus 4
+[INFO ] 2021-11-20 17:28:38.388 [pool-2-thread-4]   Bus - Bus 4 drove away from a bus stop 1 with 15 people
+[INFO ] 2021-11-20 17:28:38.389 [pool-2-thread-4]   Route - Bus stop 2 is currently occupied
+[INFO ] 2021-11-20 17:28:38.388 [pool-2-thread-5]   BusStop - Bus stop 3 finished processing by bus 5
+[INFO ] 2021-11-20 17:28:38.390 [pool-2-thread-5]   Bus - Bus 5 drove away from a bus stop 3 with 7 people
+[INFO ] 2021-11-20 17:28:38.391 [pool-2-thread-5]   Bus - Bus 5 arrived to a bus stop 1 with 7 people
+[INFO ] 2021-11-20 17:28:38.392 [pool-2-thread-5]   BusStop - Bus stop 1 is processing by bus 5
+[INFO ] 2021-11-20 17:28:38.393 [pool-2-thread-5]   Route - 5 people got off the bus 5
+[INFO ] 2021-11-20 17:28:38.396 [pool-2-thread-5]   Route - 3 people got on the bus 5
+[INFO ] 2021-11-20 17:28:41.398 [pool-2-thread-2]   BusStop - Bus stop 2 finished processing by bus 2
+[INFO ] 2021-11-20 17:28:41.398 [pool-2-thread-5]   BusStop - Bus stop 1 finished processing by bus 5
+[INFO ] 2021-11-20 17:28:41.398 [pool-2-thread-2]   Route - Bus stop 2 is available now
+[INFO ] 2021-11-20 17:28:41.399 [pool-2-thread-4]   Bus - Bus 4 arrived to a bus stop 2 with 15 people
+[INFO ] 2021-11-20 17:28:41.399 [pool-2-thread-4]   BusStop - Bus stop 2 is processing by bus 4
+[INFO ] 2021-11-20 17:28:41.399 [pool-2-thread-4]   Route - 1 people got off the bus 4
+[INFO ] 2021-11-20 17:28:41.400 [pool-2-thread-4]   Route - 0 people got on the bus 4
+[INFO ] 2021-11-20 17:28:41.400 [pool-2-thread-5]   Bus - Bus 5 drove away from a bus stop 1 with 5 people
+[INFO ] 2021-11-20 17:28:41.400 [pool-2-thread-5]   Bus - Bus 5 completed its route
+[INFO ] 2021-11-20 17:28:41.400 [pool-2-thread-2]   Bus - Bus 2 drove away from a bus stop 2 with 44 people
+[INFO ] 2021-11-20 17:28:41.400 [pool-2-thread-2]   Bus - Bus 2 completed its route
+[INFO ] 2021-11-20 17:28:43.382 [pool-2-thread-1]   BusStop - Bus stop 2 finished processing by bus 1
+[INFO ] 2021-11-20 17:28:43.382 [pool-2-thread-1]   Bus - Bus 1 drove away from a bus stop 2 with 14 people
+[INFO ] 2021-11-20 17:28:43.383 [pool-2-thread-1]   Bus - Bus 1 arrived to a bus stop 1 with 14 people
+[INFO ] 2021-11-20 17:28:43.383 [pool-2-thread-1]   BusStop - Bus stop 1 is processing by bus 1
+[INFO ] 2021-11-20 17:28:43.383 [pool-2-thread-1]   Route - 4 people got off the bus 1
+[INFO ] 2021-11-20 17:28:43.383 [pool-2-thread-1]   Route - 9 people got on the bus 1
+[INFO ] 2021-11-20 17:28:47.388 [pool-2-thread-1]   BusStop - Bus stop 1 finished processing by bus 1
+[INFO ] 2021-11-20 17:28:47.388 [pool-2-thread-1]   Bus - Bus 1 drove away from a bus stop 1 with 19 people
+[INFO ] 2021-11-20 17:28:47.388 [pool-2-thread-1]   Bus - Bus 1 completed its route
+[INFO ] 2021-11-20 17:28:48.414 [pool-2-thread-4]   BusStop - Bus stop 2 finished processing by bus 4
+[INFO ] 2021-11-20 17:28:48.414 [pool-2-thread-4]   Bus - Bus 4 drove away from a bus stop 2 with 14 people
+[INFO ] 2021-11-20 17:28:48.415 [pool-2-thread-4]   Bus - Bus 4 completed its route
+[INFO ] 2021-11-20 18:48:11.493 [pool-2-thread-8]   Bus - Bus 8 started its route
+[INFO ] 2021-11-20 18:48:11.493 [pool-2-thread-4]   Bus - Bus 4 started its route
+[INFO ] 2021-11-20 18:48:11.491 [pool-2-thread-2]   Bus - Bus 2 started its route
+[INFO ] 2021-11-20 18:48:11.492 [pool-2-thread-5]   Bus - Bus 5 started its route
+[INFO ] 2021-11-20 18:48:11.492 [pool-2-thread-7]   Bus - Bus 7 started its route
+[INFO ] 2021-11-20 18:48:11.492 [pool-2-thread-1]   Bus - Bus 1 started its route
+[INFO ] 2021-11-20 18:48:11.493 [pool-2-thread-3]   Bus - Bus 3 started its route
+[INFO ] 2021-11-20 18:48:11.493 [pool-2-thread-6]   Bus - Bus 6 started its route
+[INFO ] 2021-11-20 18:48:11.568 [pool-2-thread-1]   Bus - Bus 1 arrived to a bus stop 3 with 20 people
+[INFO ] 2021-11-20 18:48:11.569 [pool-2-thread-8]   Bus - Bus 8 arrived to a bus stop 1 with 39 people
+[INFO ] 2021-11-20 18:48:11.569 [pool-2-thread-8]   BusStop - Bus stop 1 is processing by bus 8
+[INFO ] 2021-11-20 18:48:11.569 [pool-2-thread-7]   Bus - Bus 7 arrived to a bus stop 3 with 27 people
+[INFO ] 2021-11-20 18:48:11.569 [pool-2-thread-7]   BusStop - Bus stop 3 is processing by bus 7
+[INFO ] 2021-11-20 18:48:11.570 [pool-2-thread-7]   Route - 1 people got off the bus 7
+[INFO ] 2021-11-20 18:48:11.570 [pool-2-thread-3]   Bus - Bus 3 arrived to a bus stop 1 with 39 people
+[INFO ] 2021-11-20 18:48:11.571 [pool-2-thread-3]   BusStop - Bus stop 1 is processing by bus 3
+[INFO ] 2021-11-20 18:48:11.571 [pool-2-thread-3]   Route - 18 people got off the bus 3
+[INFO ] 2021-11-20 18:48:11.570 [pool-2-thread-7]   Route - 12 people got on the bus 7
+[INFO ] 2021-11-20 18:48:11.569 [pool-2-thread-1]   BusStop - Bus stop 3 is processing by bus 1
+[INFO ] 2021-11-20 18:48:11.572 [pool-2-thread-3]   Route - 7 people got on the bus 3
+[INFO ] 2021-11-20 18:48:11.570 [pool-2-thread-8]   Route - 29 people got off the bus 8
+[INFO ] 2021-11-20 18:48:11.573 [pool-2-thread-1]   Route - 8 people got off the bus 1
+[INFO ] 2021-11-20 18:48:11.573 [pool-2-thread-8]   Route - 23 people got on the bus 8
+[INFO ] 2021-11-20 18:48:11.573 [pool-2-thread-1]   Route - 3 people got on the bus 1
+[INFO ] 2021-11-20 18:48:11.575 [pool-2-thread-4]   Route - Bus stop 3 is currently occupied
+[INFO ] 2021-11-20 18:48:11.575 [pool-2-thread-5]   Bus - Bus 5 arrived to a bus stop 2 with 15 people
+[INFO ] 2021-11-20 18:48:11.575 [pool-2-thread-5]   BusStop - Bus stop 2 is processing by bus 5
+[INFO ] 2021-11-20 18:48:11.575 [pool-2-thread-2]   Route - Bus stop 3 is currently occupied
+[INFO ] 2021-11-20 18:48:11.576 [pool-2-thread-5]   Route - 14 people got off the bus 5
+[INFO ] 2021-11-20 18:48:11.577 [pool-2-thread-5]   Route - 16 people got on the bus 5
+[INFO ] 2021-11-20 18:48:11.576 [pool-2-thread-6]   Route - Bus stop 3 is currently occupied
+[INFO ] 2021-11-20 18:48:13.585 [pool-2-thread-7]   BusStop - Bus stop 3 finished processing by bus 7
+[INFO ] 2021-11-20 18:48:13.585 [pool-2-thread-7]   Route - Bus stop 3 is available now
+[INFO ] 2021-11-20 18:48:13.586 [pool-2-thread-2]   Route - Bus stop 3 is currently occupied
+[INFO ] 2021-11-20 18:48:13.586 [pool-2-thread-6]   Route - Bus stop 3 is currently occupied
+[INFO ] 2021-11-20 18:48:13.586 [pool-2-thread-4]   Bus - Bus 4 arrived to a bus stop 3 with 18 people
+[INFO ] 2021-11-20 18:48:13.585 [pool-2-thread-7]   Bus - Bus 7 drove away from a bus stop 3 with 38 people
+[INFO ] 2021-11-20 18:48:13.586 [pool-2-thread-4]   BusStop - Bus stop 3 is processing by bus 4
+[INFO ] 2021-11-20 18:48:13.587 [pool-2-thread-4]   Route - 1 people got off the bus 4
+[INFO ] 2021-11-20 18:48:13.587 [pool-2-thread-7]   Bus - Bus 7 completed its route
+[INFO ] 2021-11-20 18:48:13.587 [pool-2-thread-4]   Route - 5 people got on the bus 4
+[INFO ] 2021-11-20 18:48:14.588 [pool-2-thread-8]   BusStop - Bus stop 1 finished processing by bus 8
+[INFO ] 2021-11-20 18:48:14.588 [pool-2-thread-8]   Route - Bus stop 1 is available now
+[INFO ] 2021-11-20 18:48:14.588 [pool-2-thread-8]   Bus - Bus 8 drove away from a bus stop 1 with 33 people
+[INFO ] 2021-11-20 18:48:14.588 [pool-2-thread-8]   Bus - Bus 8 completed its route
+[INFO ] 2021-11-20 18:48:17.574 [pool-2-thread-3]   BusStop - Bus stop 1 finished processing by bus 3
+[INFO ] 2021-11-20 18:48:17.574 [pool-2-thread-3]   Bus - Bus 3 drove away from a bus stop 1 with 28 people
+[INFO ] 2021-11-20 18:48:17.574 [pool-2-thread-3]   Bus - Bus 3 completed its route
+[INFO ] 2021-11-20 18:48:19.581 [pool-2-thread-1]   BusStop - Bus stop 3 finished processing by bus 1
+[INFO ] 2021-11-20 18:48:19.581 [pool-2-thread-5]   BusStop - Bus stop 2 finished processing by bus 5
+[INFO ] 2021-11-20 18:48:19.581 [pool-2-thread-5]   Bus - Bus 5 drove away from a bus stop 2 with 17 people
+[INFO ] 2021-11-20 18:48:19.581 [pool-2-thread-1]   Route - Bus stop 3 is available now
+[INFO ] 2021-11-20 18:48:19.581 [pool-2-thread-5]   Bus - Bus 5 completed its route
+[INFO ] 2021-11-20 18:48:19.582 [pool-2-thread-1]   Bus - Bus 1 drove away from a bus stop 3 with 15 people
+[INFO ] 2021-11-20 18:48:19.582 [pool-2-thread-1]   Bus - Bus 1 completed its route
+[INFO ] 2021-11-20 18:48:19.582 [pool-2-thread-6]   Route - Bus stop 3 is currently occupied
+[INFO ] 2021-11-20 18:48:19.582 [pool-2-thread-2]   Bus - Bus 2 arrived to a bus stop 3 with 27 people
+[INFO ] 2021-11-20 18:48:19.583 [pool-2-thread-2]   BusStop - Bus stop 3 is processing by bus 2
+[INFO ] 2021-11-20 18:48:19.585 [pool-2-thread-2]   Route - 16 people got off the bus 2
+[INFO ] 2021-11-20 18:48:19.585 [pool-2-thread-2]   Route - 14 people got on the bus 2
+[INFO ] 2021-11-20 18:48:21.598 [pool-2-thread-2]   BusStop - Bus stop 3 finished processing by bus 2
+[INFO ] 2021-11-20 18:48:21.598 [pool-2-thread-2]   Route - Bus stop 3 is available now
+[INFO ] 2021-11-20 18:48:21.598 [pool-2-thread-2]   Bus - Bus 2 drove away from a bus stop 3 with 25 people
+[INFO ] 2021-11-20 18:48:21.598 [pool-2-thread-6]   Bus - Bus 6 arrived to a bus stop 3 with 27 people
+[INFO ] 2021-11-20 18:48:21.599 [pool-2-thread-6]   BusStop - Bus stop 3 is processing by bus 6
+[INFO ] 2021-11-20 18:48:21.599 [pool-2-thread-2]   Bus - Bus 2 completed its route
+[INFO ] 2021-11-20 18:48:21.599 [pool-2-thread-6]   Route - 15 people got off the bus 6
+[INFO ] 2021-11-20 18:48:21.599 [pool-2-thread-6]   Route - 1 people got on the bus 6
+[INFO ] 2021-11-20 18:48:22.602 [pool-2-thread-4]   BusStop - Bus stop 3 finished processing by bus 4
+[INFO ] 2021-11-20 18:48:22.602 [pool-2-thread-4]   Route - Bus stop 3 is available now
+[INFO ] 2021-11-20 18:48:22.602 [pool-2-thread-6]   BusStop - Bus stop 3 finished processing by bus 6
+[INFO ] 2021-11-20 18:48:22.602 [pool-2-thread-4]   Bus - Bus 4 drove away from a bus stop 3 with 22 people
+[INFO ] 2021-11-20 18:48:22.602 [pool-2-thread-6]   Bus - Bus 6 drove away from a bus stop 3 with 13 people
+[INFO ] 2021-11-20 18:48:22.602 [pool-2-thread-4]   Bus - Bus 4 completed its route
+[INFO ] 2021-11-20 18:48:22.603 [pool-2-thread-6]   Bus - Bus 6 completed its route
+[INFO ] 2021-11-20 18:56:10.153 [pool-2-thread-8]   Bus - Bus 8 started its route
+[INFO ] 2021-11-20 18:56:10.153 [pool-2-thread-4]   Bus - Bus 4 started its route
+[INFO ] 2021-11-20 18:56:10.153 [pool-2-thread-2]   Bus - Bus 2 started its route
+[INFO ] 2021-11-20 18:56:10.153 [pool-2-thread-7]   Bus - Bus 7 started its route
+[INFO ] 2021-11-20 18:56:10.153 [pool-2-thread-3]   Bus - Bus 3 started its route
+[INFO ] 2021-11-20 18:56:10.153 [pool-2-thread-1]   Bus - Bus 1 started its route
+[INFO ] 2021-11-20 18:56:10.153 [pool-2-thread-5]   Bus - Bus 5 started its route
+[INFO ] 2021-11-20 18:56:10.153 [pool-2-thread-9]   Bus - Bus 9 started its route
+[INFO ] 2021-11-20 18:56:10.153 [pool-2-thread-6]   Bus - Bus 6 started its route
+[INFO ] 2021-11-20 18:56:10.213 [pool-2-thread-8]   Bus - Bus 8 arrived to a bus stop 7 with 26 people
+[INFO ] 2021-11-20 18:56:10.213 [pool-2-thread-8]   BusStop - Bus stop 7 is processing by bus 8
+[INFO ] 2021-11-20 18:56:10.214 [pool-2-thread-4]   Bus - Bus 4 arrived to a bus stop 3 with 18 people
+[INFO ] 2021-11-20 18:56:10.213 [pool-2-thread-5]   Bus - Bus 5 arrived to a bus stop 4 with 15 people
+[INFO ] 2021-11-20 18:56:10.214 [pool-2-thread-7]   Bus - Bus 7 arrived to a bus stop 5 with 31 people
+[INFO ] 2021-11-20 18:56:10.214 [pool-2-thread-7]   BusStop - Bus stop 5 is processing by bus 7
+[INFO ] 2021-11-20 18:56:10.214 [pool-2-thread-4]   BusStop - Bus stop 3 is processing by bus 4
+[INFO ] 2021-11-20 18:56:10.215 [pool-2-thread-4]   Route - 5 people got off the bus 4
+[INFO ] 2021-11-20 18:56:10.215 [pool-2-thread-8]   Route - 23 people got off the bus 8
+[INFO ] 2021-11-20 18:56:10.215 [pool-2-thread-2]   Bus - Bus 2 arrived to a bus stop 3 with 27 people
+[INFO ] 2021-11-20 18:56:10.214 [pool-2-thread-5]   BusStop - Bus stop 4 is processing by bus 5
+[INFO ] 2021-11-20 18:56:10.215 [pool-2-thread-2]   BusStop - Bus stop 3 is processing by bus 2
+[INFO ] 2021-11-20 18:56:10.215 [pool-2-thread-8]   Route - 29 people got on the bus 8
+[INFO ] 2021-11-20 18:56:10.215 [pool-2-thread-7]   Route - 5 people got off the bus 7
+[INFO ] 2021-11-20 18:56:10.215 [pool-2-thread-4]   Route - 2 people got on the bus 4
+[INFO ] 2021-11-20 18:56:10.216 [pool-2-thread-7]   Route - 3 people got on the bus 7
+[INFO ] 2021-11-20 18:56:10.216 [pool-2-thread-2]   Route - 17 people got off the bus 2
+[INFO ] 2021-11-20 18:56:10.215 [pool-2-thread-5]   Route - 10 people got off the bus 5
+[INFO ] 2021-11-20 18:56:10.216 [pool-2-thread-2]   Route - 28 people got on the bus 2
+[INFO ] 2021-11-20 18:56:10.216 [pool-2-thread-5]   Route - 21 people got on the bus 5
+[INFO ] 2021-11-20 18:56:10.224 [pool-2-thread-3]   Bus - Bus 3 arrived to a bus stop 1 with 39 people
+[INFO ] 2021-11-20 18:56:10.225 [pool-2-thread-3]   BusStop - Bus stop 1 is processing by bus 3
+[INFO ] 2021-11-20 18:56:10.226 [pool-2-thread-3]   Route - 21 people got off the bus 3
+[INFO ] 2021-11-20 18:56:10.226 [pool-2-thread-3]   Route - 24 people got on the bus 3
+[INFO ] 2021-11-20 18:56:10.226 [pool-2-thread-1]   Bus - Bus 1 arrived to a bus stop 3 with 20 people
+[INFO ] 2021-11-20 18:56:10.227 [pool-2-thread-1]   BusStop - Bus stop 3 is processing by bus 1
+[INFO ] 2021-11-20 18:56:10.227 [pool-2-thread-6]   Route - Bus stop 3 is currently occupied
+[INFO ] 2021-11-20 18:56:10.227 [pool-2-thread-1]   Route - 7 people got off the bus 1
+[INFO ] 2021-11-20 18:56:10.227 [pool-2-thread-1]   Route - 10 people got on the bus 1
+[INFO ] 2021-11-20 18:56:10.229 [pool-2-thread-9]   Route - Bus stop 3 is currently occupied
+[INFO ] 2021-11-20 18:56:14.219 [pool-2-thread-4]   BusStop - Bus stop 3 finished processing by bus 4
+[INFO ] 2021-11-20 18:56:14.220 [pool-2-thread-4]   Route - Bus stop 3 is available now
+[INFO ] 2021-11-20 18:56:14.220 [pool-2-thread-6]   Bus - Bus 6 arrived to a bus stop 3 with 14 people
+[INFO ] 2021-11-20 18:56:14.220 [pool-2-thread-6]   BusStop - Bus stop 3 is processing by bus 6
+[INFO ] 2021-11-20 18:56:14.221 [pool-2-thread-9]   Route - Bus stop 3 is currently occupied
+[INFO ] 2021-11-20 18:56:14.221 [pool-2-thread-6]   Route - 5 people got off the bus 6
+[INFO ] 2021-11-20 18:56:14.222 [pool-2-thread-6]   Route - 0 people got on the bus 6
+[INFO ] 2021-11-20 18:56:14.224 [pool-2-thread-4]   Bus - Bus 4 drove away from a bus stop 3 with 15 people
+[INFO ] 2021-11-20 18:56:14.224 [pool-2-thread-4]   Bus - Bus 4 arrived to a bus stop 5 with 15 people
+[INFO ] 2021-11-20 18:56:14.225 [pool-2-thread-4]   BusStop - Bus stop 5 is processing by bus 4
+[INFO ] 2021-11-20 18:56:14.225 [pool-2-thread-4]   Route - 5 people got off the bus 4
+[INFO ] 2021-11-20 18:56:14.225 [pool-2-thread-4]   Route - 18 people got on the bus 4
+[INFO ] 2021-11-20 18:56:15.225 [pool-2-thread-2]   BusStop - Bus stop 3 finished processing by bus 2
+[INFO ] 2021-11-20 18:56:15.225 [pool-2-thread-7]   BusStop - Bus stop 5 finished processing by bus 7
+[INFO ] 2021-11-20 18:56:15.225 [pool-2-thread-2]   Route - Bus stop 3 is available now
+[INFO ] 2021-11-20 18:56:15.225 [pool-2-thread-7]   Bus - Bus 7 drove away from a bus stop 5 with 29 people
+[INFO ] 2021-11-20 18:56:15.225 [pool-2-thread-2]   Bus - Bus 2 drove away from a bus stop 3 with 38 people
+[INFO ] 2021-11-20 18:56:15.226 [pool-2-thread-7]   Bus - Bus 7 arrived to a bus stop 7 with 29 people
+[INFO ] 2021-11-20 18:56:15.226 [pool-2-thread-7]   BusStop - Bus stop 7 is processing by bus 7
+[INFO ] 2021-11-20 18:56:15.226 [pool-2-thread-2]   Bus - Bus 2 arrived to a bus stop 1 with 38 people
+[INFO ] 2021-11-20 18:56:15.226 [pool-2-thread-7]   Route - 6 people got off the bus 7
+[INFO ] 2021-11-20 18:56:15.226 [pool-2-thread-2]   BusStop - Bus stop 1 is processing by bus 2
+[INFO ] 2021-11-20 18:56:15.226 [pool-2-thread-7]   Route - 0 people got on the bus 7
+[INFO ] 2021-11-20 18:56:15.227 [pool-2-thread-2]   Route - 12 people got off the bus 2
+[INFO ] 2021-11-20 18:56:15.227 [pool-2-thread-9]   Bus - Bus 9 arrived to a bus stop 3 with 28 people
+[INFO ] 2021-11-20 18:56:15.227 [pool-2-thread-2]   Route - 3 people got on the bus 2
+[INFO ] 2021-11-20 18:56:15.227 [pool-2-thread-9]   BusStop - Bus stop 3 is processing by bus 9
+[INFO ] 2021-11-20 18:56:15.227 [pool-2-thread-9]   Route - 13 people got off the bus 9
+[INFO ] 2021-11-20 18:56:15.227 [pool-2-thread-9]   Route - 9 people got on the bus 9
+[INFO ] 2021-11-20 18:56:17.225 [pool-2-thread-8]   BusStop - Bus stop 7 finished processing by bus 8
+[INFO ] 2021-11-20 18:56:17.225 [pool-2-thread-8]   Bus - Bus 8 drove away from a bus stop 7 with 32 people
+[INFO ] 2021-11-20 18:56:17.225 [pool-2-thread-5]   BusStop - Bus stop 4 finished processing by bus 5
+[INFO ] 2021-11-20 18:56:17.226 [pool-2-thread-8]   Bus - Bus 8 arrived to a bus stop 4 with 32 people
+[INFO ] 2021-11-20 18:56:17.226 [pool-2-thread-5]   Bus - Bus 5 drove away from a bus stop 4 with 26 people
+[INFO ] 2021-11-20 18:56:17.226 [pool-2-thread-8]   BusStop - Bus stop 4 is processing by bus 8
+[INFO ] 2021-11-20 18:56:17.226 [pool-2-thread-5]   Bus - Bus 5 arrived to a bus stop 2 with 26 people
+[INFO ] 2021-11-20 18:56:17.226 [pool-2-thread-8]   Route - 24 people got off the bus 8
+[INFO ] 2021-11-20 18:56:17.226 [pool-2-thread-5]   BusStop - Bus stop 2 is processing by bus 5
+[INFO ] 2021-11-20 18:56:17.226 [pool-2-thread-8]   Route - 35 people got on the bus 8
+[INFO ] 2021-11-20 18:56:17.226 [pool-2-thread-5]   Route - 19 people got off the bus 5
+[INFO ] 2021-11-20 18:56:17.226 [pool-2-thread-5]   Route - 20 people got on the bus 5
+[INFO ] 2021-11-20 18:56:17.241 [pool-2-thread-2]   BusStop - Bus stop 1 finished processing by bus 2
+[INFO ] 2021-11-20 18:56:17.241 [pool-2-thread-2]   Bus - Bus 2 drove away from a bus stop 1 with 29 people
+[INFO ] 2021-11-20 18:56:17.241 [pool-2-thread-2]   Bus - Bus 2 arrived to a bus stop 5 with 29 people
+[INFO ] 2021-11-20 18:56:17.241 [pool-2-thread-2]   BusStop - Bus stop 5 is processing by bus 2
+[INFO ] 2021-11-20 18:56:17.242 [pool-2-thread-2]   Route - 15 people got off the bus 2
+[INFO ] 2021-11-20 18:56:17.242 [pool-2-thread-2]   Route - 20 people got on the bus 2
+[INFO ] 2021-11-20 18:56:18.227 [pool-2-thread-3]   BusStop - Bus stop 1 finished processing by bus 3
+[INFO ] 2021-11-20 18:56:18.227 [pool-2-thread-3]   Bus - Bus 3 drove away from a bus stop 1 with 42 people
+[INFO ] 2021-11-20 18:56:18.227 [pool-2-thread-3]   Bus - Bus 3 arrived to a bus stop 7 with 42 people
+[INFO ] 2021-11-20 18:56:18.227 [pool-2-thread-3]   BusStop - Bus stop 7 is processing by bus 3
+[INFO ] 2021-11-20 18:56:18.227 [pool-2-thread-3]   Route - 26 people got off the bus 3
+[INFO ] 2021-11-20 18:56:18.228 [pool-2-thread-3]   Route - 12 people got on the bus 3
+[INFO ] 2021-11-20 18:56:18.243 [pool-2-thread-1]   BusStop - Bus stop 3 finished processing by bus 1
+[INFO ] 2021-11-20 18:56:18.243 [pool-2-thread-1]   Route - Bus stop 3 is available now
+[INFO ] 2021-11-20 18:56:18.243 [pool-2-thread-1]   Bus - Bus 1 drove away from a bus stop 3 with 23 people
+[INFO ] 2021-11-20 18:56:18.243 [pool-2-thread-1]   Bus - Bus 1 arrived to a bus stop 6 with 23 people
+[INFO ] 2021-11-20 18:56:18.243 [pool-2-thread-1]   BusStop - Bus stop 6 is processing by bus 1
+[INFO ] 2021-11-20 18:56:18.243 [pool-2-thread-1]   Route - 7 people got off the bus 1
+[INFO ] 2021-11-20 18:56:18.244 [pool-2-thread-1]   Route - 0 people got on the bus 1
+[INFO ] 2021-11-20 18:56:19.249 [pool-2-thread-1]   BusStop - Bus stop 6 finished processing by bus 1
+[INFO ] 2021-11-20 18:56:19.250 [pool-2-thread-1]   Bus - Bus 1 drove away from a bus stop 6 with 16 people
+[INFO ] 2021-11-20 18:56:19.250 [pool-2-thread-2]   BusStop - Bus stop 5 finished processing by bus 2
+[INFO ] 2021-11-20 18:56:19.250 [pool-2-thread-2]   Bus - Bus 2 drove away from a bus stop 5 with 34 people
+[INFO ] 2021-11-20 18:56:19.250 [pool-2-thread-1]   Bus - Bus 1 arrived to a bus stop 2 with 16 people
+[INFO ] 2021-11-20 18:56:19.250 [pool-2-thread-2]   Bus - Bus 2 arrived to a bus stop 4 with 34 people
+[INFO ] 2021-11-20 18:56:19.250 [pool-2-thread-2]   BusStop - Bus stop 4 is processing by bus 2
+[INFO ] 2021-11-20 18:56:19.250 [pool-2-thread-1]   BusStop - Bus stop 2 is processing by bus 1
+[INFO ] 2021-11-20 18:56:19.250 [pool-2-thread-2]   Route - 3 people got off the bus 2
+[INFO ] 2021-11-20 18:56:19.251 [pool-2-thread-1]   Route - 6 people got off the bus 1
+[INFO ] 2021-11-20 18:56:19.251 [pool-2-thread-2]   Route - 5 people got on the bus 2
+[INFO ] 2021-11-20 18:56:19.251 [pool-2-thread-1]   Route - 0 people got on the bus 1
+[INFO ] 2021-11-20 18:56:20.233 [pool-2-thread-7]   BusStop - Bus stop 7 finished processing by bus 7
+[INFO ] 2021-11-20 18:56:20.233 [pool-2-thread-7]   Bus - Bus 7 drove away from a bus stop 7 with 23 people
+[INFO ] 2021-11-20 18:56:20.233 [pool-2-thread-7]   Bus - Bus 7 arrived to a bus stop 1 with 23 people
+[INFO ] 2021-11-20 18:56:20.233 [pool-2-thread-7]   BusStop - Bus stop 1 is processing by bus 7
+[INFO ] 2021-11-20 18:56:20.233 [pool-2-thread-7]   Route - 6 people got off the bus 7
+[INFO ] 2021-11-20 18:56:20.233 [pool-2-thread-7]   Route - 10 people got on the bus 7
+[INFO ] 2021-11-20 18:56:21.231 [pool-2-thread-6]   BusStop - Bus stop 3 finished processing by bus 6
+[INFO ] 2021-11-20 18:56:21.231 [pool-2-thread-6]   Bus - Bus 6 drove away from a bus stop 3 with 9 people
+[INFO ] 2021-11-20 18:56:21.232 [pool-2-thread-6]   Bus - Bus 6 arrived to a bus stop 6 with 9 people
+[INFO ] 2021-11-20 18:56:21.232 [pool-2-thread-6]   BusStop - Bus stop 6 is processing by bus 6
+[INFO ] 2021-11-20 18:56:21.232 [pool-2-thread-6]   Route - 2 people got off the bus 6
+[INFO ] 2021-11-20 18:56:21.232 [pool-2-thread-6]   Route - 3 people got on the bus 6
+[INFO ] 2021-11-20 18:56:22.237 [pool-2-thread-4]   BusStop - Bus stop 5 finished processing by bus 4
+[INFO ] 2021-11-20 18:56:22.237 [pool-2-thread-9]   BusStop - Bus stop 3 finished processing by bus 9
+[INFO ] 2021-11-20 18:56:22.237 [pool-2-thread-9]   Bus - Bus 9 drove away from a bus stop 3 with 24 people
+[INFO ] 2021-11-20 18:56:22.237 [pool-2-thread-4]   Bus - Bus 4 drove away from a bus stop 5 with 28 people
+[INFO ] 2021-11-20 18:56:22.237 [pool-2-thread-9]   Bus - Bus 9 arrived to a bus stop 6 with 24 people
+[INFO ] 2021-11-20 18:56:22.237 [pool-2-thread-4]   Bus - Bus 4 arrived to a bus stop 1 with 28 people
+[INFO ] 2021-11-20 18:56:22.238 [pool-2-thread-9]   BusStop - Bus stop 6 is processing by bus 9
+[INFO ] 2021-11-20 18:56:22.238 [pool-2-thread-4]   BusStop - Bus stop 1 is processing by bus 4
+[INFO ] 2021-11-20 18:56:22.238 [pool-2-thread-9]   Route - 10 people got off the bus 9
+[INFO ] 2021-11-20 18:56:22.238 [pool-2-thread-4]   Route - 9 people got off the bus 4
+[INFO ] 2021-11-20 18:56:22.238 [pool-2-thread-4]   Route - 10 people got on the bus 4
+[INFO ] 2021-11-20 18:56:22.238 [pool-2-thread-9]   Route - 4 people got on the bus 9
+[INFO ] 2021-11-20 18:56:23.242 [pool-2-thread-6]   BusStop - Bus stop 6 finished processing by bus 6
+[INFO ] 2021-11-20 18:56:23.242 [pool-2-thread-8]   BusStop - Bus stop 4 finished processing by bus 8
+[INFO ] 2021-11-20 18:56:23.242 [pool-2-thread-6]   Bus - Bus 6 drove away from a bus stop 6 with 10 people
+[INFO ] 2021-11-20 18:56:23.242 [pool-2-thread-8]   Bus - Bus 8 drove away from a bus stop 4 with 43 people
+[INFO ] 2021-11-20 18:56:23.242 [pool-2-thread-6]   Bus - Bus 6 arrived to a bus stop 7 with 10 people
+[INFO ] 2021-11-20 18:56:23.242 [pool-2-thread-8]   Bus - Bus 8 arrived to a bus stop 5 with 43 people
+[INFO ] 2021-11-20 18:56:23.242 [pool-2-thread-6]   BusStop - Bus stop 7 is processing by bus 6
+[INFO ] 2021-11-20 18:56:23.242 [pool-2-thread-8]   BusStop - Bus stop 5 is processing by bus 8
+[INFO ] 2021-11-20 18:56:23.242 [pool-2-thread-6]   Route - 0 people got off the bus 6
+[INFO ] 2021-11-20 18:56:23.242 [pool-2-thread-8]   Route - 6 people got off the bus 8
+[INFO ] 2021-11-20 18:56:23.243 [pool-2-thread-8]   Route - 2 people got on the bus 8
+[INFO ] 2021-11-20 18:56:23.243 [pool-2-thread-6]   Route - 14 people got on the bus 6
+[INFO ] 2021-11-20 18:56:24.246 [pool-2-thread-8]   BusStop - Bus stop 5 finished processing by bus 8
+[INFO ] 2021-11-20 18:56:24.246 [pool-2-thread-8]   Bus - Bus 8 drove away from a bus stop 5 with 39 people
+[INFO ] 2021-11-20 18:56:24.246 [pool-2-thread-8]   Bus - Bus 8 arrived to a bus stop 6 with 39 people
+[INFO ] 2021-11-20 18:56:24.246 [pool-2-thread-8]   BusStop - Bus stop 6 is processing by bus 8
+[INFO ] 2021-11-20 18:56:24.246 [pool-2-thread-8]   Route - 29 people got off the bus 8
+[INFO ] 2021-11-20 18:56:24.246 [pool-2-thread-8]   Route - 1 people got on the bus 8
+[INFO ] 2021-11-20 18:56:24.262 [pool-2-thread-1]   BusStop - Bus stop 2 finished processing by bus 1
+[INFO ] 2021-11-20 18:56:24.262 [pool-2-thread-1]   Bus - Bus 1 drove away from a bus stop 2 with 10 people
+[INFO ] 2021-11-20 18:56:24.262 [pool-2-thread-1]   Bus - Bus 1 arrived to a bus stop 5 with 10 people
+[INFO ] 2021-11-20 18:56:24.262 [pool-2-thread-1]   BusStop - Bus stop 5 is processing by bus 1
+[INFO ] 2021-11-20 18:56:24.262 [pool-2-thread-1]   Route - 10 people got off the bus 1
+[INFO ] 2021-11-20 18:56:24.262 [pool-2-thread-1]   Route - 9 people got on the bus 1
+[INFO ] 2021-11-20 18:56:25.238 [pool-2-thread-7]   BusStop - Bus stop 1 finished processing by bus 7
+[INFO ] 2021-11-20 18:56:25.238 [pool-2-thread-7]   Bus - Bus 7 drove away from a bus stop 1 with 27 people
+[INFO ] 2021-11-20 18:56:25.239 [pool-2-thread-7]   Bus - Bus 7 arrived to a bus stop 6 with 27 people
+[INFO ] 2021-11-20 18:56:25.239 [pool-2-thread-7]   BusStop - Bus stop 6 is processing by bus 7
+[INFO ] 2021-11-20 18:56:25.239 [pool-2-thread-7]   Route - 20 people got off the bus 7
+[INFO ] 2021-11-20 18:56:25.239 [pool-2-thread-7]   Route - 36 people got on the bus 7
+[INFO ] 2021-11-20 18:56:26.228 [pool-2-thread-5]   BusStop - Bus stop 2 finished processing by bus 5
+[INFO ] 2021-11-20 18:56:26.228 [pool-2-thread-5]   Bus - Bus 5 drove away from a bus stop 2 with 27 people
+[INFO ] 2021-11-20 18:56:26.228 [pool-2-thread-5]   Bus - Bus 5 arrived to a bus stop 3 with 27 people
+[INFO ] 2021-11-20 18:56:26.228 [pool-2-thread-5]   BusStop - Bus stop 3 is processing by bus 5
+[INFO ] 2021-11-20 18:56:26.228 [pool-2-thread-5]   Route - 5 people got off the bus 5
+[INFO ] 2021-11-20 18:56:26.229 [pool-2-thread-5]   Route - 15 people got on the bus 5
+[INFO ] 2021-11-20 18:56:26.244 [pool-2-thread-4]   BusStop - Bus stop 1 finished processing by bus 4
+[INFO ] 2021-11-20 18:56:26.244 [pool-2-thread-4]   Bus - Bus 4 drove away from a bus stop 1 with 29 people
+[INFO ] 2021-11-20 18:56:26.244 [pool-2-thread-9]   BusStop - Bus stop 6 finished processing by bus 9
+[INFO ] 2021-11-20 18:56:26.244 [pool-2-thread-4]   Bus - Bus 4 arrived to a bus stop 7 with 29 people
+[INFO ] 2021-11-20 18:56:26.244 [pool-2-thread-4]   BusStop - Bus stop 7 is processing by bus 4
+[INFO ] 2021-11-20 18:56:26.244 [pool-2-thread-9]   Route - Bus stop 6 is available now
+[INFO ] 2021-11-20 18:56:26.245 [pool-2-thread-4]   Route - 22 people got off the bus 4
+[INFO ] 2021-11-20 18:56:26.245 [pool-2-thread-4]   Route - 32 people got on the bus 4
+[INFO ] 2021-11-20 18:56:26.245 [pool-2-thread-9]   Bus - Bus 9 drove away from a bus stop 6 with 18 people
+[INFO ] 2021-11-20 18:56:26.245 [pool-2-thread-9]   Route - Bus stop 7 is currently occupied
+[INFO ] 2021-11-20 18:56:26.260 [pool-2-thread-2]   BusStop - Bus stop 4 finished processing by bus 2
+[INFO ] 2021-11-20 18:56:26.260 [pool-2-thread-2]   Bus - Bus 2 drove away from a bus stop 4 with 36 people
+[INFO ] 2021-11-20 18:56:26.260 [pool-2-thread-2]   Route - Bus stop 7 is currently occupied
+[INFO ] 2021-11-20 18:56:27.232 [pool-2-thread-3]   BusStop - Bus stop 7 finished processing by bus 3
+[INFO ] 2021-11-20 18:56:27.232 [pool-2-thread-3]   Route - Bus stop 7 is available now
+[INFO ] 2021-11-20 18:56:27.232 [pool-2-thread-3]   Bus - Bus 3 drove away from a bus stop 7 with 28 people
+[INFO ] 2021-11-20 18:56:27.232 [pool-2-thread-2]   Route - Bus stop 7 is currently occupied
+[INFO ] 2021-11-20 18:56:27.232 [pool-2-thread-9]   Bus - Bus 9 arrived to a bus stop 7 with 18 people
+[INFO ] 2021-11-20 18:56:27.232 [pool-2-thread-3]   Bus - Bus 3 arrived to a bus stop 5 with 28 people
+[INFO ] 2021-11-20 18:56:27.232 [pool-2-thread-9]   BusStop - Bus stop 7 is processing by bus 9
+[INFO ] 2021-11-20 18:56:27.233 [pool-2-thread-3]   BusStop - Bus stop 5 is processing by bus 3
+[INFO ] 2021-11-20 18:56:27.233 [pool-2-thread-9]   Route - 15 people got off the bus 9
+[INFO ] 2021-11-20 18:56:27.233 [pool-2-thread-3]   Route - 28 people got off the bus 3
+[INFO ] 2021-11-20 18:56:27.233 [pool-2-thread-9]   Route - 22 people got on the bus 9
+[INFO ] 2021-11-20 18:56:27.233 [pool-2-thread-3]   Route - 10 people got on the bus 3
+[INFO ] 2021-11-20 18:56:27.248 [pool-2-thread-4]   BusStop - Bus stop 7 finished processing by bus 4
+[INFO ] 2021-11-20 18:56:27.248 [pool-2-thread-4]   Route - Bus stop 7 is available now
+[INFO ] 2021-11-20 18:56:27.249 [pool-2-thread-2]   Bus - Bus 2 arrived to a bus stop 7 with 36 people
+[INFO ] 2021-11-20 18:56:27.248 [pool-2-thread-4]   Bus - Bus 4 drove away from a bus stop 7 with 39 people
+[INFO ] 2021-11-20 18:56:27.249 [pool-2-thread-2]   BusStop - Bus stop 7 is processing by bus 2
+[INFO ] 2021-11-20 18:56:27.249 [pool-2-thread-4]   Bus - Bus 4 arrived to a bus stop 2 with 39 people
+[INFO ] 2021-11-20 18:56:27.249 [pool-2-thread-2]   Route - 35 people got off the bus 2
+[INFO ] 2021-11-20 18:56:27.249 [pool-2-thread-2]   Route - 0 people got on the bus 2
+[INFO ] 2021-11-20 18:56:27.249 [pool-2-thread-4]   BusStop - Bus stop 2 is processing by bus 4
+[INFO ] 2021-11-20 18:56:27.250 [pool-2-thread-4]   Route - 25 people got off the bus 4
+[INFO ] 2021-11-20 18:56:27.250 [pool-2-thread-4]   Route - 31 people got on the bus 4
+[INFO ] 2021-11-20 18:56:29.246 [pool-2-thread-3]   BusStop - Bus stop 5 finished processing by bus 3
+[INFO ] 2021-11-20 18:56:29.246 [pool-2-thread-3]   Bus - Bus 3 drove away from a bus stop 5 with 10 people
+[INFO ] 2021-11-20 18:56:29.247 [pool-2-thread-3]   Bus - Bus 3 arrived to a bus stop 4 with 10 people
+[INFO ] 2021-11-20 18:56:29.247 [pool-2-thread-3]   BusStop - Bus stop 4 is processing by bus 3
+[INFO ] 2021-11-20 18:56:29.247 [pool-2-thread-3]   Route - 8 people got off the bus 3
+[INFO ] 2021-11-20 18:56:29.247 [pool-2-thread-3]   Route - 25 people got on the bus 3
+[INFO ] 2021-11-20 18:56:30.250 [pool-2-thread-6]   BusStop - Bus stop 7 finished processing by bus 6
+[INFO ] 2021-11-20 18:56:30.250 [pool-2-thread-6]   Route - Bus stop 7 is available now
+[INFO ] 2021-11-20 18:56:30.250 [pool-2-thread-6]   Bus - Bus 6 drove away from a bus stop 7 with 24 people
+[INFO ] 2021-11-20 18:56:30.251 [pool-2-thread-6]   Bus - Bus 6 arrived to a bus stop 1 with 24 people
+[INFO ] 2021-11-20 18:56:30.251 [pool-2-thread-6]   BusStop - Bus stop 1 is processing by bus 6
+[INFO ] 2021-11-20 18:56:30.251 [pool-2-thread-6]   Route - 5 people got off the bus 6
+[INFO ] 2021-11-20 18:56:30.251 [pool-2-thread-6]   Route - 10 people got on the bus 6
+[INFO ] 2021-11-20 18:56:30.252 [pool-2-thread-4]   BusStop - Bus stop 2 finished processing by bus 4
+[INFO ] 2021-11-20 18:56:30.252 [pool-2-thread-4]   Bus - Bus 4 drove away from a bus stop 2 with 45 people
+[INFO ] 2021-11-20 18:56:30.252 [pool-2-thread-4]   Bus - Bus 4 arrived to a bus stop 6 with 45 people
+[INFO ] 2021-11-20 18:56:30.252 [pool-2-thread-4]   BusStop - Bus stop 6 is processing by bus 4
+[INFO ] 2021-11-20 18:56:30.252 [pool-2-thread-4]   Route - 3 people got off the bus 4
+[INFO ] 2021-11-20 18:56:30.252 [pool-2-thread-4]   Route - 6 people got on the bus 4
+[INFO ] 2021-11-20 18:56:31.236 [pool-2-thread-5]   BusStop - Bus stop 3 finished processing by bus 5
+[INFO ] 2021-11-20 18:56:31.236 [pool-2-thread-5]   Bus - Bus 5 drove away from a bus stop 3 with 37 people
+[INFO ] 2021-11-20 18:56:31.236 [pool-2-thread-5]   Route - Bus stop 6 is currently occupied
+[INFO ] 2021-11-20 18:56:31.252 [pool-2-thread-2]   BusStop - Bus stop 7 finished processing by bus 2
+[INFO ] 2021-11-20 18:56:31.252 [pool-2-thread-2]   Bus - Bus 2 drove away from a bus stop 7 with 1 people
+[INFO ] 2021-11-20 18:56:31.252 [pool-2-thread-2]   Bus - Bus 2 arrived to a bus stop 2 with 1 people
+[INFO ] 2021-11-20 18:56:31.252 [pool-2-thread-2]   BusStop - Bus stop 2 is processing by bus 2
+[INFO ] 2021-11-20 18:56:31.252 [pool-2-thread-2]   Route - 0 people got off the bus 2
+[INFO ] 2021-11-20 18:56:31.252 [pool-2-thread-2]   Route - 14 people got on the bus 2
+[INFO ] 2021-11-20 18:56:32.240 [pool-2-thread-9]   BusStop - Bus stop 7 finished processing by bus 9
+[INFO ] 2021-11-20 18:56:32.240 [pool-2-thread-7]   BusStop - Bus stop 6 finished processing by bus 7
+[INFO ] 2021-11-20 18:56:32.240 [pool-2-thread-9]   Bus - Bus 9 drove away from a bus stop 7 with 25 people
+[INFO ] 2021-11-20 18:56:32.240 [pool-2-thread-7]   Route - Bus stop 6 is available now
+[INFO ] 2021-11-20 18:56:32.240 [pool-2-thread-7]   Bus - Bus 7 drove away from a bus stop 6 with 43 people
+[INFO ] 2021-11-20 18:56:32.240 [pool-2-thread-5]   Bus - Bus 5 arrived to a bus stop 6 with 37 people
+[INFO ] 2021-11-20 18:56:32.240 [pool-2-thread-9]   Bus - Bus 9 arrived to a bus stop 1 with 25 people
+[INFO ] 2021-11-20 18:56:32.241 [pool-2-thread-5]   BusStop - Bus stop 6 is processing by bus 5
+[INFO ] 2021-11-20 18:56:32.241 [pool-2-thread-9]   BusStop - Bus stop 1 is processing by bus 9
+[INFO ] 2021-11-20 18:56:32.241 [pool-2-thread-7]   Bus - Bus 7 arrived to a bus stop 4 with 43 people
+[INFO ] 2021-11-20 18:56:32.241 [pool-2-thread-5]   Route - 13 people got off the bus 5
+[INFO ] 2021-11-20 18:56:32.241 [pool-2-thread-9]   Route - 16 people got off the bus 9
+[INFO ] 2021-11-20 18:56:32.241 [pool-2-thread-5]   Route - 3 people got on the bus 5
+[INFO ] 2021-11-20 18:56:32.241 [pool-2-thread-7]   BusStop - Bus stop 4 is processing by bus 7
+[INFO ] 2021-11-20 18:56:32.241 [pool-2-thread-9]   Route - 7 people got on the bus 9
+[INFO ] 2021-11-20 18:56:32.241 [pool-2-thread-7]   Route - 28 people got off the bus 7
+[INFO ] 2021-11-20 18:56:32.241 [pool-2-thread-7]   Route - 15 people got on the bus 7
+[INFO ] 2021-11-20 18:56:33.256 [pool-2-thread-8]   BusStop - Bus stop 6 finished processing by bus 8
+[INFO ] 2021-11-20 18:56:33.256 [pool-2-thread-8]   Route - Bus stop 6 is available now
+[INFO ] 2021-11-20 18:56:33.256 [pool-2-thread-8]   Bus - Bus 8 drove away from a bus stop 6 with 11 people
+[INFO ] 2021-11-20 18:56:33.256 [pool-2-thread-8]   Bus - Bus 8 arrived to a bus stop 3 with 11 people
+[INFO ] 2021-11-20 18:56:33.256 [pool-2-thread-8]   BusStop - Bus stop 3 is processing by bus 8
+[INFO ] 2021-11-20 18:56:33.257 [pool-2-thread-8]   Route - 6 people got off the bus 8
+[INFO ] 2021-11-20 18:56:33.257 [pool-2-thread-8]   Route - 5 people got on the bus 8
+[INFO ] 2021-11-20 18:56:33.272 [pool-2-thread-1]   BusStop - Bus stop 5 finished processing by bus 1
+[INFO ] 2021-11-20 18:56:33.272 [pool-2-thread-1]   Bus - Bus 1 drove away from a bus stop 5 with 9 people
+[INFO ] 2021-11-20 18:56:33.272 [pool-2-thread-1]   Bus - Bus 1 arrived to a bus stop 1 with 9 people
+[INFO ] 2021-11-20 18:56:33.272 [pool-2-thread-1]   BusStop - Bus stop 1 is processing by bus 1
+[INFO ] 2021-11-20 18:56:33.273 [pool-2-thread-1]   Route - 9 people got off the bus 1
+[INFO ] 2021-11-20 18:56:33.273 [pool-2-thread-1]   Route - 14 people got on the bus 1
+[INFO ] 2021-11-20 18:56:34.244 [pool-2-thread-5]   BusStop - Bus stop 6 finished processing by bus 5
+[INFO ] 2021-11-20 18:56:34.244 [pool-2-thread-7]   BusStop - Bus stop 4 finished processing by bus 7
+[INFO ] 2021-11-20 18:56:34.244 [pool-2-thread-7]   Bus - Bus 7 drove away from a bus stop 4 with 30 people
+[INFO ] 2021-11-20 18:56:34.244 [pool-2-thread-5]   Bus - Bus 5 drove away from a bus stop 6 with 27 people
+[INFO ] 2021-11-20 18:56:34.244 [pool-2-thread-7]   Bus - Bus 7 arrived to a bus stop 2 with 30 people
+[INFO ] 2021-11-20 18:56:34.244 [pool-2-thread-5]   Bus - Bus 5 arrived to a bus stop 7 with 27 people
+[INFO ] 2021-11-20 18:56:34.244 [pool-2-thread-7]   BusStop - Bus stop 2 is processing by bus 7
+[INFO ] 2021-11-20 18:56:34.245 [pool-2-thread-7]   Route - 0 people got off the bus 7
+[INFO ] 2021-11-20 18:56:34.245 [pool-2-thread-7]   Route - 12 people got on the bus 7
+[INFO ] 2021-11-20 18:56:34.245 [pool-2-thread-5]   BusStop - Bus stop 7 is processing by bus 5
+[INFO ] 2021-11-20 18:56:34.245 [pool-2-thread-5]   Route - 18 people got off the bus 5
+[INFO ] 2021-11-20 18:56:34.245 [pool-2-thread-5]   Route - 6 people got on the bus 5
+[INFO ] 2021-11-20 18:56:34.260 [pool-2-thread-8]   BusStop - Bus stop 3 finished processing by bus 8
+[INFO ] 2021-11-20 18:56:34.260 [pool-2-thread-8]   Bus - Bus 8 drove away from a bus stop 3 with 10 people
+[INFO ] 2021-11-20 18:56:34.260 [pool-2-thread-8]   Bus - Bus 8 arrived to a bus stop 2 with 10 people
+[INFO ] 2021-11-20 18:56:34.260 [pool-2-thread-8]   BusStop - Bus stop 2 is processing by bus 8
+[INFO ] 2021-11-20 18:56:34.260 [pool-2-thread-8]   Route - 10 people got off the bus 8
+[INFO ] 2021-11-20 18:56:34.260 [pool-2-thread-8]   Route - 4 people got on the bus 8
+[INFO ] 2021-11-20 18:56:36.263 [pool-2-thread-3]   BusStop - Bus stop 4 finished processing by bus 3
+[INFO ] 2021-11-20 18:56:36.263 [pool-2-thread-8]   BusStop - Bus stop 2 finished processing by bus 8
+[INFO ] 2021-11-20 18:56:36.263 [pool-2-thread-3]   Bus - Bus 3 drove away from a bus stop 4 with 27 people
+[INFO ] 2021-11-20 18:56:36.263 [pool-2-thread-8]   Route - Bus stop 2 is available now
+[INFO ] 2021-11-20 18:56:36.263 [pool-2-thread-3]   Bus - Bus 3 arrived to a bus stop 2 with 27 people
+[INFO ] 2021-11-20 18:56:36.263 [pool-2-thread-8]   Bus - Bus 8 drove away from a bus stop 2 with 4 people
+[INFO ] 2021-11-20 18:56:36.264 [pool-2-thread-3]   BusStop - Bus stop 2 is processing by bus 3
+[INFO ] 2021-11-20 18:56:36.264 [pool-2-thread-3]   Route - 7 people got off the bus 3
+[INFO ] 2021-11-20 18:56:36.264 [pool-2-thread-3]   Route - 6 people got on the bus 3
+[INFO ] 2021-11-20 18:56:36.264 [pool-2-thread-8]   Route - Bus stop 1 is currently occupied
+[INFO ] 2021-11-20 18:56:37.255 [pool-2-thread-6]   BusStop - Bus stop 1 finished processing by bus 6
+[INFO ] 2021-11-20 18:56:37.255 [pool-2-thread-6]   Route - Bus stop 1 is available now
+[INFO ] 2021-11-20 18:56:37.255 [pool-2-thread-6]   Bus - Bus 6 drove away from a bus stop 1 with 29 people
+[INFO ] 2021-11-20 18:56:37.255 [pool-2-thread-6]   Bus - Bus 6 arrived to a bus stop 5 with 29 people
+[INFO ] 2021-11-20 18:56:37.255 [pool-2-thread-6]   BusStop - Bus stop 5 is processing by bus 6
+[INFO ] 2021-11-20 18:56:37.255 [pool-2-thread-8]   Bus - Bus 8 arrived to a bus stop 1 with 4 people
+[INFO ] 2021-11-20 18:56:37.256 [pool-2-thread-6]   Route - 25 people got off the bus 6
+[INFO ] 2021-11-20 18:56:37.256 [pool-2-thread-8]   BusStop - Bus stop 1 is processing by bus 8
+[INFO ] 2021-11-20 18:56:37.256 [pool-2-thread-6]   Route - 12 people got on the bus 6
+[INFO ] 2021-11-20 18:56:37.256 [pool-2-thread-8]   Route - 0 people got off the bus 8
+[INFO ] 2021-11-20 18:56:37.256 [pool-2-thread-8]   Route - 0 people got on the bus 8
+[INFO ] 2021-11-20 18:56:37.267 [pool-2-thread-2]   BusStop - Bus stop 2 finished processing by bus 2
+[INFO ] 2021-11-20 18:56:37.267 [pool-2-thread-2]   Route - Bus stop 2 is available now
+[INFO ] 2021-11-20 18:56:37.267 [pool-2-thread-2]   Bus - Bus 2 drove away from a bus stop 2 with 15 people
+[INFO ] 2021-11-20 18:56:37.267 [pool-2-thread-2]   Bus - Bus 2 arrived to a bus stop 5 with 15 people
+[INFO ] 2021-11-20 18:56:37.267 [pool-2-thread-2]   BusStop - Bus stop 5 is processing by bus 2
+[INFO ] 2021-11-20 18:56:37.267 [pool-2-thread-2]   Route - 11 people got off the bus 2
+[INFO ] 2021-11-20 18:56:37.267 [pool-2-thread-2]   Route - 7 people got on the bus 2
+[INFO ] 2021-11-20 18:56:38.259 [pool-2-thread-7]   BusStop - Bus stop 2 finished processing by bus 7
+[INFO ] 2021-11-20 18:56:38.259 [pool-2-thread-4]   BusStop - Bus stop 6 finished processing by bus 4
+[INFO ] 2021-11-20 18:56:38.259 [pool-2-thread-7]   Bus - Bus 7 drove away from a bus stop 2 with 42 people
+[INFO ] 2021-11-20 18:56:38.259 [pool-2-thread-7]   Bus - Bus 7 arrived to a bus stop 3 with 42 people
+[INFO ] 2021-11-20 18:56:38.259 [pool-2-thread-4]   Bus - Bus 4 drove away from a bus stop 6 with 48 people
+[INFO ] 2021-11-20 18:56:38.259 [pool-2-thread-7]   BusStop - Bus stop 3 is processing by bus 7
+[INFO ] 2021-11-20 18:56:38.259 [pool-2-thread-4]   Bus - Bus 4 arrived to a bus stop 4 with 48 people
+[INFO ] 2021-11-20 18:56:38.259 [pool-2-thread-7]   Route - 39 people got off the bus 7
+[INFO ] 2021-11-20 18:56:38.260 [pool-2-thread-4]   BusStop - Bus stop 4 is processing by bus 4
+[INFO ] 2021-11-20 18:56:38.260 [pool-2-thread-7]   Route - 12 people got on the bus 7
+[INFO ] 2021-11-20 18:56:38.260 [pool-2-thread-4]   Route - 6 people got off the bus 4
+[INFO ] 2021-11-20 18:56:38.260 [pool-2-thread-4]   Route - 8 people got on the bus 4
+[INFO ] 2021-11-20 18:56:39.281 [pool-2-thread-1]   BusStop - Bus stop 1 finished processing by bus 1
+[INFO ] 2021-11-20 18:56:39.282 [pool-2-thread-1]   Route - Bus stop 1 is available now
+[INFO ] 2021-11-20 18:56:39.282 [pool-2-thread-1]   Bus - Bus 1 drove away from a bus stop 1 with 14 people
+[INFO ] 2021-11-20 18:56:39.282 [pool-2-thread-1]   Bus - Bus 1 arrived to a bus stop 4 with 14 people
+[INFO ] 2021-11-20 18:56:39.282 [pool-2-thread-1]   BusStop - Bus stop 4 is processing by bus 1
+[INFO ] 2021-11-20 18:56:39.283 [pool-2-thread-1]   Route - 13 people got off the bus 1
+[INFO ] 2021-11-20 18:56:39.283 [pool-2-thread-1]   Route - 28 people got on the bus 1
+[INFO ] 2021-11-20 18:56:40.257 [pool-2-thread-5]   BusStop - Bus stop 7 finished processing by bus 5
+[INFO ] 2021-11-20 18:56:40.257 [pool-2-thread-6]   BusStop - Bus stop 5 finished processing by bus 6
+[INFO ] 2021-11-20 18:56:40.257 [pool-2-thread-5]   Bus - Bus 5 drove away from a bus stop 7 with 15 people
+[INFO ] 2021-11-20 18:56:40.257 [pool-2-thread-6]   Bus - Bus 6 drove away from a bus stop 5 with 16 people
+[INFO ] 2021-11-20 18:56:40.257 [pool-2-thread-5]   Bus - Bus 5 arrived to a bus stop 1 with 15 people
+[INFO ] 2021-11-20 18:56:40.257 [pool-2-thread-6]   Bus - Bus 6 arrived to a bus stop 4 with 16 people
+[INFO ] 2021-11-20 18:56:40.257 [pool-2-thread-5]   BusStop - Bus stop 1 is processing by bus 5
+[INFO ] 2021-11-20 18:56:40.257 [pool-2-thread-6]   BusStop - Bus stop 4 is processing by bus 6
+[INFO ] 2021-11-20 18:56:40.257 [pool-2-thread-5]   Route - 8 people got off the bus 5
+[INFO ] 2021-11-20 18:56:40.257 [pool-2-thread-6]   Route - 15 people got off the bus 6
+[INFO ] 2021-11-20 18:56:40.257 [pool-2-thread-5]   Route - 2 people got on the bus 5
+[INFO ] 2021-11-20 18:56:40.257 [pool-2-thread-6]   Route - 15 people got on the bus 6
+[INFO ] 2021-11-20 18:56:40.273 [pool-2-thread-4]   BusStop - Bus stop 4 finished processing by bus 4
+[INFO ] 2021-11-20 18:56:40.273 [pool-2-thread-4]   Route - Bus stop 4 is available now
+[INFO ] 2021-11-20 18:56:40.273 [pool-2-thread-4]   Bus - Bus 4 drove away from a bus stop 4 with 50 people
+[INFO ] 2021-11-20 18:56:40.273 [pool-2-thread-4]   Bus - Bus 4 completed its route
+[INFO ] 2021-11-20 18:56:41.247 [pool-2-thread-9]   BusStop - Bus stop 1 finished processing by bus 9
+[INFO ] 2021-11-20 18:56:41.247 [pool-2-thread-9]   Route - Bus stop 1 is available now
+[INFO ] 2021-11-20 18:56:41.248 [pool-2-thread-9]   Bus - Bus 9 drove away from a bus stop 1 with 16 people
+[INFO ] 2021-11-20 18:56:41.248 [pool-2-thread-9]   Bus - Bus 9 arrived to a bus stop 5 with 16 people
+[INFO ] 2021-11-20 18:56:41.248 [pool-2-thread-9]   BusStop - Bus stop 5 is processing by bus 9
+[INFO ] 2021-11-20 18:56:41.249 [pool-2-thread-9]   Route - 9 people got off the bus 9
+[INFO ] 2021-11-20 18:56:41.249 [pool-2-thread-9]   Route - 6 people got on the bus 9
+[INFO ] 2021-11-20 18:56:41.279 [pool-2-thread-2]   BusStop - Bus stop 5 finished processing by bus 2
+[INFO ] 2021-11-20 18:56:41.279 [pool-2-thread-2]   Bus - Bus 2 drove away from a bus stop 5 with 11 people
+[INFO ] 2021-11-20 18:56:41.280 [pool-2-thread-2]   Bus - Bus 2 completed its route
+[INFO ] 2021-11-20 18:56:41.294 [pool-2-thread-1]   BusStop - Bus stop 4 finished processing by bus 1
+[INFO ] 2021-11-20 18:56:41.294 [pool-2-thread-1]   Bus - Bus 1 drove away from a bus stop 4 with 29 people
+[INFO ] 2021-11-20 18:56:41.294 [pool-2-thread-1]   Bus - Bus 1 arrived to a bus stop 7 with 29 people
+[INFO ] 2021-11-20 18:56:41.294 [pool-2-thread-1]   BusStop - Bus stop 7 is processing by bus 1
+[INFO ] 2021-11-20 18:56:41.294 [pool-2-thread-1]   Route - 29 people got off the bus 1
+[INFO ] 2021-11-20 18:56:41.294 [pool-2-thread-1]   Route - 14 people got on the bus 1
+[INFO ] 2021-11-20 18:56:42.267 [pool-2-thread-8]   BusStop - Bus stop 1 finished processing by bus 8
+[INFO ] 2021-11-20 18:56:42.267 [pool-2-thread-3]   BusStop - Bus stop 2 finished processing by bus 3
+[INFO ] 2021-11-20 18:56:42.267 [pool-2-thread-7]   BusStop - Bus stop 3 finished processing by bus 7
+[INFO ] 2021-11-20 18:56:42.267 [pool-2-thread-3]   Bus - Bus 3 drove away from a bus stop 2 with 26 people
+[INFO ] 2021-11-20 18:56:42.267 [pool-2-thread-8]   Bus - Bus 8 drove away from a bus stop 1 with 4 people
+[INFO ] 2021-11-20 18:56:42.267 [pool-2-thread-7]   Bus - Bus 7 drove away from a bus stop 3 with 15 people
+[INFO ] 2021-11-20 18:56:42.267 [pool-2-thread-8]   Bus - Bus 8 completed its route
+[INFO ] 2021-11-20 18:56:42.267 [pool-2-thread-7]   Bus - Bus 7 completed its route
+[INFO ] 2021-11-20 18:56:42.267 [pool-2-thread-3]   Bus - Bus 3 arrived to a bus stop 3 with 26 people
+[INFO ] 2021-11-20 18:56:42.267 [pool-2-thread-3]   BusStop - Bus stop 3 is processing by bus 3
+[INFO ] 2021-11-20 18:56:42.267 [pool-2-thread-3]   Route - 24 people got off the bus 3
+[INFO ] 2021-11-20 18:56:42.267 [pool-2-thread-3]   Route - 9 people got on the bus 3
+[INFO ] 2021-11-20 18:56:42.299 [pool-2-thread-1]   BusStop - Bus stop 7 finished processing by bus 1
+[INFO ] 2021-11-20 18:56:42.299 [pool-2-thread-1]   Bus - Bus 1 drove away from a bus stop 7 with 14 people
+[INFO ] 2021-11-20 18:56:42.300 [pool-2-thread-1]   Bus - Bus 1 completed its route
+[INFO ] 2021-11-20 18:56:43.259 [pool-2-thread-5]   BusStop - Bus stop 1 finished processing by bus 5
+[INFO ] 2021-11-20 18:56:43.259 [pool-2-thread-5]   Bus - Bus 5 drove away from a bus stop 1 with 9 people
+[INFO ] 2021-11-20 18:56:43.259 [pool-2-thread-5]   Bus - Bus 5 arrived to a bus stop 5 with 9 people
+[INFO ] 2021-11-20 18:56:43.259 [pool-2-thread-5]   BusStop - Bus stop 5 is processing by bus 5
+[INFO ] 2021-11-20 18:56:43.259 [pool-2-thread-5]   Route - 0 people got off the bus 5
+[INFO ] 2021-11-20 18:56:43.259 [pool-2-thread-5]   Route - 2 people got on the bus 5
+[INFO ] 2021-11-20 18:56:46.259 [pool-2-thread-6]   BusStop - Bus stop 4 finished processing by bus 6
+[INFO ] 2021-11-20 18:56:46.259 [pool-2-thread-6]   Bus - Bus 6 drove away from a bus stop 4 with 16 people
+[INFO ] 2021-11-20 18:56:46.259 [pool-2-thread-6]   Bus - Bus 6 arrived to a bus stop 2 with 16 people
+[INFO ] 2021-11-20 18:56:46.259 [pool-2-thread-6]   BusStop - Bus stop 2 is processing by bus 6
+[INFO ] 2021-11-20 18:56:46.259 [pool-2-thread-6]   Route - 5 people got off the bus 6
+[INFO ] 2021-11-20 18:56:46.260 [pool-2-thread-6]   Route - 4 people got on the bus 6
+[INFO ] 2021-11-20 18:56:48.261 [pool-2-thread-9]   BusStop - Bus stop 5 finished processing by bus 9
+[INFO ] 2021-11-20 18:56:48.261 [pool-2-thread-9]   Bus - Bus 9 drove away from a bus stop 5 with 13 people
+[INFO ] 2021-11-20 18:56:48.261 [pool-2-thread-9]   Bus - Bus 9 arrived to a bus stop 2 with 13 people
+[INFO ] 2021-11-20 18:56:48.261 [pool-2-thread-9]   BusStop - Bus stop 2 is processing by bus 9
+[INFO ] 2021-11-20 18:56:48.261 [pool-2-thread-9]   Route - 5 people got off the bus 9
+[INFO ] 2021-11-20 18:56:48.261 [pool-2-thread-9]   Route - 8 people got on the bus 9
+[INFO ] 2021-11-20 18:56:50.274 [pool-2-thread-3]   BusStop - Bus stop 3 finished processing by bus 3
+[INFO ] 2021-11-20 18:56:50.274 [pool-2-thread-3]   Bus - Bus 3 drove away from a bus stop 3 with 11 people
+[INFO ] 2021-11-20 18:56:50.274 [pool-2-thread-3]   Bus - Bus 3 arrived to a bus stop 6 with 11 people
+[INFO ] 2021-11-20 18:56:50.274 [pool-2-thread-3]   BusStop - Bus stop 6 is processing by bus 3
+[INFO ] 2021-11-20 18:56:50.274 [pool-2-thread-3]   Route - 4 people got off the bus 3
+[INFO ] 2021-11-20 18:56:50.274 [pool-2-thread-3]   Route - 29 people got on the bus 3
+[INFO ] 2021-11-20 18:56:51.262 [pool-2-thread-6]   BusStop - Bus stop 2 finished processing by bus 6
+[INFO ] 2021-11-20 18:56:51.262 [pool-2-thread-6]   Bus - Bus 6 drove away from a bus stop 2 with 15 people
+[INFO ] 2021-11-20 18:56:51.262 [pool-2-thread-6]   Bus - Bus 6 completed its route
+[INFO ] 2021-11-20 18:56:52.268 [pool-2-thread-5]   BusStop - Bus stop 5 finished processing by bus 5
+[INFO ] 2021-11-20 18:56:52.268 [pool-2-thread-5]   Bus - Bus 5 drove away from a bus stop 5 with 11 people
+[INFO ] 2021-11-20 18:56:52.268 [pool-2-thread-5]   Bus - Bus 5 completed its route
+[INFO ] 2021-11-20 18:56:53.272 [pool-2-thread-9]   BusStop - Bus stop 2 finished processing by bus 9
+[INFO ] 2021-11-20 18:56:53.272 [pool-2-thread-9]   Bus - Bus 9 drove away from a bus stop 2 with 16 people
+[INFO ] 2021-11-20 18:56:53.272 [pool-2-thread-9]   Bus - Bus 9 arrived to a bus stop 4 with 16 people
+[INFO ] 2021-11-20 18:56:53.272 [pool-2-thread-9]   BusStop - Bus stop 4 is processing by bus 9
+[INFO ] 2021-11-20 18:56:53.272 [pool-2-thread-9]   Route - 12 people got off the bus 9
+[INFO ] 2021-11-20 18:56:53.272 [pool-2-thread-9]   Route - 9 people got on the bus 9
+[INFO ] 2021-11-20 18:56:54.277 [pool-2-thread-3]   BusStop - Bus stop 6 finished processing by bus 3
+[INFO ] 2021-11-20 18:56:54.277 [pool-2-thread-3]   Bus - Bus 3 drove away from a bus stop 6 with 36 people
+[INFO ] 2021-11-20 18:56:54.277 [pool-2-thread-3]   Bus - Bus 3 completed its route
+[INFO ] 2021-11-20 18:56:59.272 [pool-2-thread-9]   BusStop - Bus stop 4 finished processing by bus 9
+[INFO ] 2021-11-20 18:56:59.272 [pool-2-thread-9]   Bus - Bus 9 drove away from a bus stop 4 with 13 people
+[INFO ] 2021-11-20 18:56:59.272 [pool-2-thread-9]   Bus - Bus 9 completed its route
+[ERROR] 2021-11-20 19:15:30.579 [main]   BusReaderImpl - File "data/busDataa.txt" doesn't exist in specified directory.
+[INFO ] 2021-11-20 19:23:23.208 [pool-2-thread-3]   Bus - Bus 3 started its route
+[INFO ] 2021-11-20 19:23:23.208 [pool-2-thread-9]   Bus - Bus 9 started its route
+[INFO ] 2021-11-20 19:23:23.208 [pool-2-thread-7]   Bus - Bus 7 started its route
+[INFO ] 2021-11-20 19:23:23.208 [pool-2-thread-5]   Bus - Bus 5 started its route
+[INFO ] 2021-11-20 19:23:23.208 [pool-2-thread-2]   Bus - Bus 2 started its route
+[INFO ] 2021-11-20 19:23:23.208 [pool-2-thread-4]   Bus - Bus 4 started its route
+[INFO ] 2021-11-20 19:23:23.208 [pool-2-thread-8]   Bus - Bus 8 started its route
+[ERROR] 2021-11-20 19:23:23.219 [pool-2-thread-3]   Route - Error was occurred while reading file "data/routeData.properties"
+[WARN ] 2021-11-20 19:23:23.219 [pool-2-thread-3]   Route - Route will be initialised with default values of bus stop amount(7) and bus stop capacity(3)
+[INFO ] 2021-11-20 19:23:23.208 [pool-2-thread-6]   Bus - Bus 6 started its route
+[INFO ] 2021-11-20 19:23:23.208 [pool-2-thread-1]   Bus - Bus 1 started its route
+[INFO ] 2021-11-20 19:23:23.263 [pool-2-thread-1]   Bus - Bus 1 arrived to a bus stop 3 with 20 people
+[INFO ] 2021-11-20 19:23:23.263 [pool-2-thread-3]   Bus - Bus 3 arrived to a bus stop 1 with 39 people
+[INFO ] 2021-11-20 19:23:23.263 [pool-2-thread-5]   Bus - Bus 5 arrived to a bus stop 4 with 15 people
+[INFO ] 2021-11-20 19:23:23.263 [pool-2-thread-5]   BusStop - Bus stop 4 is processing by bus 5
+[INFO ] 2021-11-20 19:23:23.263 [pool-2-thread-3]   BusStop - Bus stop 1 is processing by bus 3
+[INFO ] 2021-11-20 19:23:23.263 [pool-2-thread-1]   BusStop - Bus stop 3 is processing by bus 1
+[INFO ] 2021-11-20 19:23:23.263 [pool-2-thread-9]   Bus - Bus 9 arrived to a bus stop 3 with 28 people
+[INFO ] 2021-11-20 19:23:23.264 [pool-2-thread-5]   Route - 3 people got off the bus 5
+[INFO ] 2021-11-20 19:23:23.263 [pool-2-thread-2]   Bus - Bus 2 arrived to a bus stop 3 with 27 people
+[INFO ] 2021-11-20 19:23:23.264 [pool-2-thread-3]   Route - 14 people got off the bus 3
+[INFO ] 2021-11-20 19:23:23.264 [pool-2-thread-5]   Route - 4 people got on the bus 5
+[INFO ] 2021-11-20 19:23:23.264 [pool-2-thread-3]   Route - 6 people got on the bus 3
+[INFO ] 2021-11-20 19:23:23.264 [pool-2-thread-1]   Route - 15 people got off the bus 1
+[INFO ] 2021-11-20 19:23:23.264 [pool-2-thread-9]   BusStop - Bus stop 3 is processing by bus 9
+[INFO ] 2021-11-20 19:23:23.264 [pool-2-thread-2]   BusStop - Bus stop 3 is processing by bus 2
+[INFO ] 2021-11-20 19:23:23.265 [pool-2-thread-9]   Route - 2 people got off the bus 9
+[INFO ] 2021-11-20 19:23:23.265 [pool-2-thread-2]   Route - 14 people got off the bus 2
+[INFO ] 2021-11-20 19:23:23.265 [pool-2-thread-9]   Route - 0 people got on the bus 9
+[INFO ] 2021-11-20 19:23:23.265 [pool-2-thread-1]   Route - 17 people got on the bus 1
+[INFO ] 2021-11-20 19:23:23.266 [pool-2-thread-2]   Route - 17 people got on the bus 2
+[INFO ] 2021-11-20 19:23:23.266 [pool-2-thread-6]   Route - Bus stop 3 is currently occupied
+[INFO ] 2021-11-20 19:23:23.269 [pool-2-thread-7]   Bus - Bus 7 arrived to a bus stop 5 with 31 people
+[INFO ] 2021-11-20 19:23:23.274 [pool-2-thread-7]   BusStop - Bus stop 5 is processing by bus 7
+[INFO ] 2021-11-20 19:23:23.276 [pool-2-thread-7]   Route - 17 people got off the bus 7
+[INFO ] 2021-11-20 19:23:23.277 [pool-2-thread-7]   Route - 23 people got on the bus 7
+[INFO ] 2021-11-20 19:23:23.276 [pool-2-thread-8]   Bus - Bus 8 arrived to a bus stop 7 with 26 people
+[INFO ] 2021-11-20 19:23:23.277 [pool-2-thread-8]   BusStop - Bus stop 7 is processing by bus 8
+[INFO ] 2021-11-20 19:23:23.277 [pool-2-thread-8]   Route - 4 people got off the bus 8
+[INFO ] 2021-11-20 19:23:23.277 [pool-2-thread-8]   Route - 1 people got on the bus 8
+[INFO ] 2021-11-20 19:23:23.277 [pool-2-thread-4]   Route - Bus stop 3 is currently occupied
+[INFO ] 2021-11-20 19:23:24.265 [pool-2-thread-5]   BusStop - Bus stop 4 finished processing by bus 5
+[INFO ] 2021-11-20 19:23:24.266 [pool-2-thread-5]   Bus - Bus 5 drove away from a bus stop 4 with 16 people
+[INFO ] 2021-11-20 19:23:24.266 [pool-2-thread-5]   Bus - Bus 5 arrived to a bus stop 2 with 16 people
+[INFO ] 2021-11-20 19:23:24.266 [pool-2-thread-5]   BusStop - Bus stop 2 is processing by bus 5
+[INFO ] 2021-11-20 19:23:24.266 [pool-2-thread-5]   Route - 9 people got off the bus 5
+[INFO ] 2021-11-20 19:23:24.266 [pool-2-thread-5]   Route - 2 people got on the bus 5
+[INFO ] 2021-11-20 19:23:26.269 [pool-2-thread-9]   BusStop - Bus stop 3 finished processing by bus 9
+[INFO ] 2021-11-20 19:23:26.269 [pool-2-thread-9]   Route - Bus stop 3 is available now
+[INFO ] 2021-11-20 19:23:26.269 [pool-2-thread-4]   Route - Bus stop 3 is currently occupied
+[INFO ] 2021-11-20 19:23:26.269 [pool-2-thread-6]   Bus - Bus 6 arrived to a bus stop 3 with 14 people
+[INFO ] 2021-11-20 19:23:26.269 [pool-2-thread-9]   Bus - Bus 9 drove away from a bus stop 3 with 26 people
+[INFO ] 2021-11-20 19:23:26.270 [pool-2-thread-6]   BusStop - Bus stop 3 is processing by bus 6
+[INFO ] 2021-11-20 19:23:26.270 [pool-2-thread-9]   Bus - Bus 9 arrived to a bus stop 6 with 26 people
+[INFO ] 2021-11-20 19:23:26.270 [pool-2-thread-9]   BusStop - Bus stop 6 is processing by bus 9
+[INFO ] 2021-11-20 19:23:26.270 [pool-2-thread-6]   Route - 5 people got off the bus 6
+[INFO ] 2021-11-20 19:23:26.270 [pool-2-thread-9]   Route - 20 people got off the bus 9
+[INFO ] 2021-11-20 19:23:26.270 [pool-2-thread-6]   Route - 6 people got on the bus 6
+[INFO ] 2021-11-20 19:23:26.271 [pool-2-thread-9]   Route - 12 people got on the bus 9
+[INFO ] 2021-11-20 19:23:26.280 [pool-2-thread-5]   BusStop - Bus stop 2 finished processing by bus 5
+[INFO ] 2021-11-20 19:23:26.280 [pool-2-thread-5]   Bus - Bus 5 drove away from a bus stop 2 with 9 people
+[INFO ] 2021-11-20 19:23:26.280 [pool-2-thread-5]   Route - Bus stop 3 is currently occupied
+[INFO ] 2021-11-20 19:23:28.276 [pool-2-thread-2]   BusStop - Bus stop 3 finished processing by bus 2
+[INFO ] 2021-11-20 19:23:28.276 [pool-2-thread-2]   Route - Bus stop 3 is available now
+[INFO ] 2021-11-20 19:23:28.277 [pool-2-thread-4]   Bus - Bus 4 arrived to a bus stop 3 with 18 people
+[INFO ] 2021-11-20 19:23:28.277 [pool-2-thread-5]   Route - Bus stop 3 is currently occupied
+[INFO ] 2021-11-20 19:23:28.277 [pool-2-thread-4]   BusStop - Bus stop 3 is processing by bus 4
+[INFO ] 2021-11-20 19:23:28.279 [pool-2-thread-4]   Route - 12 people got off the bus 4
+[INFO ] 2021-11-20 19:23:28.279 [pool-2-thread-4]   Route - 27 people got on the bus 4
+[INFO ] 2021-11-20 19:23:28.279 [pool-2-thread-2]   Bus - Bus 2 drove away from a bus stop 3 with 30 people
+[INFO ] 2021-11-20 19:23:28.280 [pool-2-thread-2]   Bus - Bus 2 arrived to a bus stop 1 with 30 people
+[INFO ] 2021-11-20 19:23:28.280 [pool-2-thread-2]   BusStop - Bus stop 1 is processing by bus 2
+[INFO ] 2021-11-20 19:23:28.281 [pool-2-thread-2]   Route - 0 people got off the bus 2
+[INFO ] 2021-11-20 19:23:28.281 [pool-2-thread-2]   Route - 3 people got on the bus 2
+[INFO ] 2021-11-20 19:23:29.282 [pool-2-thread-6]   BusStop - Bus stop 3 finished processing by bus 6
+[INFO ] 2021-11-20 19:23:29.282 [pool-2-thread-4]   BusStop - Bus stop 3 finished processing by bus 4
+[INFO ] 2021-11-20 19:23:29.282 [pool-2-thread-2]   BusStop - Bus stop 1 finished processing by bus 2
+[INFO ] 2021-11-20 19:23:29.282 [pool-2-thread-6]   Route - Bus stop 3 is available now
+[INFO ] 2021-11-20 19:23:29.282 [pool-2-thread-2]   Bus - Bus 2 drove away from a bus stop 1 with 33 people
+[INFO ] 2021-11-20 19:23:29.283 [pool-2-thread-5]   Bus - Bus 5 arrived to a bus stop 3 with 9 people
+[INFO ] 2021-11-20 19:23:29.283 [pool-2-thread-2]   Bus - Bus 2 arrived to a bus stop 5 with 33 people
+[INFO ] 2021-11-20 19:23:29.283 [pool-2-thread-2]   BusStop - Bus stop 5 is processing by bus 2
+[INFO ] 2021-11-20 19:23:29.284 [pool-2-thread-2]   Route - 23 people got off the bus 2
+[INFO ] 2021-11-20 19:23:29.283 [pool-2-thread-5]   BusStop - Bus stop 3 is processing by bus 5
+[INFO ] 2021-11-20 19:23:29.285 [pool-2-thread-4]   Route - Bus stop 3 is available now
+[INFO ] 2021-11-20 19:23:29.288 [pool-2-thread-4]   Bus - Bus 4 drove away from a bus stop 3 with 33 people
+[INFO ] 2021-11-20 19:23:29.285 [pool-2-thread-5]   Route - 0 people got off the bus 5
+[INFO ] 2021-11-20 19:23:29.288 [pool-2-thread-4]   Bus - Bus 4 arrived to a bus stop 5 with 33 people
+[INFO ] 2021-11-20 19:23:29.288 [pool-2-thread-4]   BusStop - Bus stop 5 is processing by bus 4
+[INFO ] 2021-11-20 19:23:29.282 [pool-2-thread-6]   Bus - Bus 6 drove away from a bus stop 3 with 15 people
+[INFO ] 2021-11-20 19:23:29.289 [pool-2-thread-4]   Route - 11 people got off the bus 4
+[INFO ] 2021-11-20 19:23:29.290 [pool-2-thread-6]   Bus - Bus 6 arrived to a bus stop 6 with 15 people
+[INFO ] 2021-11-20 19:23:29.290 [pool-2-thread-4]   Route - 27 people got on the bus 4
+[INFO ] 2021-11-20 19:23:29.290 [pool-2-thread-6]   BusStop - Bus stop 6 is processing by bus 6
+[INFO ] 2021-11-20 19:23:32.276 [pool-2-thread-3]   Bus - Bus 3 drove away from a bus stop 1 with 31 people
+[INFO ] 2021-11-20 19:23:32.276 [pool-2-thread-1]   Route - Bus stop 6 is currently occupied
+[INFO ] 2021-11-20 19:23:32.277 [pool-2-thread-3]   Bus - Bus 3 arrived to a bus stop 7 with 31 people
+[INFO ] 2021-11-20 19:23:32.277 [pool-2-thread-3]   BusStop - Bus stop 7 is processing by bus 3
+[INFO ] 2021-11-20 19:23:32.277 [pool-2-thread-3]   Route - 25 people got off the bus 3
+[INFO ] 2021-11-20 19:23:32.277 [pool-2-thread-3]   Route - 35 people got on the bus 3
+[INFO ] 2021-11-20 19:23:32.292 [pool-2-thread-8]   BusStop - Bus stop 4 finished processing by bus 8
+[INFO ] 2021-11-20 19:23:32.292 [pool-2-thread-8]   Bus - Bus 8 drove away from a bus stop 4 with 21 people
+[INFO ] 2021-11-20 19:23:32.292 [pool-2-thread-7]   BusStop - Bus stop 5 finished processing by bus 7
+[INFO ] 2021-11-20 19:23:32.292 [pool-2-thread-7]   Route - Bus stop 5 is available now
+[INFO ] 2021-11-20 19:23:32.292 [pool-2-thread-8]   Bus - Bus 8 arrived to a bus stop 5 with 21 people
+[INFO ] 2021-11-20 19:23:32.293 [pool-2-thread-7]   Bus - Bus 7 drove away from a bus stop 5 with 37 people
+[INFO ] 2021-11-20 19:23:32.293 [pool-2-thread-8]   BusStop - Bus stop 5 is processing by bus 8
+[INFO ] 2021-11-20 19:23:32.293 [pool-2-thread-7]   Bus - Bus 7 arrived to a bus stop 7 with 37 people
+[INFO ] 2021-11-20 19:23:32.292 [pool-2-thread-6]   BusStop - Bus stop 6 finished processing by bus 6
+[INFO ] 2021-11-20 19:23:32.293 [pool-2-thread-6]   Route - Bus stop 6 is available now
+[INFO ] 2021-11-20 19:23:32.293 [pool-2-thread-7]   BusStop - Bus stop 7 is processing by bus 7
+[INFO ] 2021-11-20 19:23:32.294 [pool-2-thread-6]   Bus - Bus 6 drove away from a bus stop 6 with 17 people
+[INFO ] 2021-11-20 19:23:32.294 [pool-2-thread-7]   Route - 35 people got off the bus 7
+[INFO ] 2021-11-20 19:23:32.293 [pool-2-thread-8]   Route - 13 people got off the bus 8
+[INFO ] 2021-11-20 19:23:32.294 [pool-2-thread-7]   Route - 5 people got on the bus 7
+[INFO ] 2021-11-20 19:23:32.294 [pool-2-thread-8]   Route - 23 people got on the bus 8
+[INFO ] 2021-11-20 19:23:32.294 [pool-2-thread-6]   Bus - Bus 6 arrived to a bus stop 7 with 17 people
+[INFO ] 2021-11-20 19:23:32.294 [pool-2-thread-6]   BusStop - Bus stop 7 is processing by bus 6
+[INFO ] 2021-11-20 19:23:32.294 [pool-2-thread-1]   Bus - Bus 1 arrived to a bus stop 6 with 22 people
+[INFO ] 2021-11-20 19:23:32.295 [pool-2-thread-6]   Route - 0 people got off the bus 6
+[INFO ] 2021-11-20 19:23:32.295 [pool-2-thread-6]   Route - 7 people got on the bus 6
+[INFO ] 2021-11-20 19:23:32.295 [pool-2-thread-1]   BusStop - Bus stop 6 is processing by bus 1
+[INFO ] 2021-11-20 19:23:32.295 [pool-2-thread-1]   Route - 2 people got off the bus 1
+[INFO ] 2021-11-20 19:23:32.296 [pool-2-thread-1]   Route - 3 people got on the bus 1
+[INFO ] 2021-11-20 19:23:33.298 [pool-2-thread-6]   BusStop - Bus stop 7 finished processing by bus 6
+[INFO ] 2021-11-20 19:23:33.298 [pool-2-thread-6]   Route - Bus stop 7 is available now
+[INFO ] 2021-11-20 19:23:33.298 [pool-2-thread-6]   Bus - Bus 6 drove away from a bus stop 7 with 24 people
+[INFO ] 2021-11-20 19:23:33.299 [pool-2-thread-6]   Bus - Bus 6 arrived to a bus stop 1 with 24 people
+[INFO ] 2021-11-20 19:23:33.299 [pool-2-thread-6]   BusStop - Bus stop 1 is processing by bus 6
+[INFO ] 2021-11-20 19:23:33.299 [pool-2-thread-6]   Route - 23 people got off the bus 6
+[INFO ] 2021-11-20 19:23:33.299 [pool-2-thread-6]   Route - 34 people got on the bus 6
+[INFO ] 2021-11-20 19:23:34.274 [pool-2-thread-9]   BusStop - Bus stop 6 finished processing by bus 9
+[INFO ] 2021-11-20 19:23:34.274 [pool-2-thread-9]   Route - Bus stop 6 is available now
+[INFO ] 2021-11-20 19:23:34.274 [pool-2-thread-9]   Bus - Bus 9 drove away from a bus stop 6 with 18 people
+[INFO ] 2021-11-20 19:23:34.274 [pool-2-thread-9]   Bus - Bus 9 arrived to a bus stop 7 with 18 people
+[INFO ] 2021-11-20 19:23:34.274 [pool-2-thread-9]   BusStop - Bus stop 7 is processing by bus 9
+[INFO ] 2021-11-20 19:23:34.274 [pool-2-thread-9]   Route - 1 people got off the bus 9
+[INFO ] 2021-11-20 19:23:34.275 [pool-2-thread-9]   Route - 5 people got on the bus 9
+[INFO ] 2021-11-20 19:23:34.293 [pool-2-thread-4]   BusStop - Bus stop 5 finished processing by bus 4
+[INFO ] 2021-11-20 19:23:34.293 [pool-2-thread-4]   Bus - Bus 4 drove away from a bus stop 5 with 49 people
+[INFO ] 2021-11-20 19:23:34.293 [pool-2-thread-4]   Bus - Bus 4 arrived to a bus stop 1 with 49 people
+[INFO ] 2021-11-20 19:23:34.294 [pool-2-thread-4]   BusStop - Bus stop 1 is processing by bus 4
+[INFO ] 2021-11-20 19:23:34.294 [pool-2-thread-4]   Route - 27 people got off the bus 4
+[INFO ] 2021-11-20 19:23:34.294 [pool-2-thread-4]   Route - 19 people got on the bus 4
+[INFO ] 2021-11-20 19:23:35.282 [pool-2-thread-3]   BusStop - Bus stop 7 finished processing by bus 3
+[INFO ] 2021-11-20 19:23:35.282 [pool-2-thread-3]   Route - Bus stop 7 is available now
+[INFO ] 2021-11-20 19:23:35.282 [pool-2-thread-3]   Bus - Bus 3 drove away from a bus stop 7 with 41 people
+[INFO ] 2021-11-20 19:23:35.283 [pool-2-thread-3]   Bus - Bus 3 arrived to a bus stop 5 with 41 people
+[INFO ] 2021-11-20 19:23:35.283 [pool-2-thread-3]   BusStop - Bus stop 5 is processing by bus 3
+[INFO ] 2021-11-20 19:23:35.283 [pool-2-thread-3]   Route - 14 people got off the bus 3
+[INFO ] 2021-11-20 19:23:35.283 [pool-2-thread-3]   Route - 9 people got on the bus 3
+[INFO ] 2021-11-20 19:23:35.296 [pool-2-thread-7]   BusStop - Bus stop 7 finished processing by bus 7
+[INFO ] 2021-11-20 19:23:35.296 [pool-2-thread-7]   Bus - Bus 7 drove away from a bus stop 7 with 7 people
+[INFO ] 2021-11-20 19:23:35.296 [pool-2-thread-7]   Bus - Bus 7 arrived to a bus stop 1 with 7 people
+[INFO ] 2021-11-20 19:23:35.296 [pool-2-thread-7]   BusStop - Bus stop 1 is processing by bus 7
+[INFO ] 2021-11-20 19:23:35.297 [pool-2-thread-7]   Route - 1 people got off the bus 7
+[INFO ] 2021-11-20 19:23:35.297 [pool-2-thread-7]   Route - 12 people got on the bus 7
+[INFO ] 2021-11-20 19:23:36.304 [pool-2-thread-2]   BusStop - Bus stop 4 finished processing by bus 2
+[INFO ] 2021-11-20 19:23:36.305 [pool-2-thread-2]   Bus - Bus 2 drove away from a bus stop 4 with 10 people
+[INFO ] 2021-11-20 19:23:36.305 [pool-2-thread-2]   Bus - Bus 2 arrived to a bus stop 7 with 10 people
+[INFO ] 2021-11-20 19:23:36.305 [pool-2-thread-2]   BusStop - Bus stop 7 is processing by bus 2
+[INFO ] 2021-11-20 19:23:36.305 [pool-2-thread-2]   Route - 1 people got off the bus 2
+[INFO ] 2021-11-20 19:23:36.304 [pool-2-thread-1]   BusStop - Bus stop 6 finished processing by bus 1
+[INFO ] 2021-11-20 19:23:36.305 [pool-2-thread-2]   Route - 23 people got on the bus 2
+[INFO ] 2021-11-20 19:23:36.306 [pool-2-thread-1]   Bus - Bus 1 drove away from a bus stop 6 with 23 people
+[INFO ] 2021-11-20 19:23:36.306 [pool-2-thread-1]   Bus - Bus 1 arrived to a bus stop 2 with 23 people
+[INFO ] 2021-11-20 19:23:36.306 [pool-2-thread-1]   BusStop - Bus stop 2 is processing by bus 1
+[INFO ] 2021-11-20 19:23:36.307 [pool-2-thread-1]   Route - 2 people got off the bus 1
+[INFO ] 2021-11-20 19:23:36.307 [pool-2-thread-1]   Route - 0 people got on the bus 1
+[INFO ] 2021-11-20 19:23:37.308 [pool-2-thread-4]   BusStop - Bus stop 1 finished processing by bus 4
+[INFO ] 2021-11-20 19:23:37.308 [pool-2-thread-4]   Route - Bus stop 1 is available now
+[INFO ] 2021-11-20 19:23:37.308 [pool-2-thread-4]   Bus - Bus 4 drove away from a bus stop 1 with 41 people
+[INFO ] 2021-11-20 19:23:37.309 [pool-2-thread-4]   Bus - Bus 4 arrived to a bus stop 7 with 41 people
+[INFO ] 2021-11-20 19:23:37.309 [pool-2-thread-4]   BusStop - Bus stop 7 is processing by bus 4
+[INFO ] 2021-11-20 19:23:37.309 [pool-2-thread-4]   Route - 25 people got off the bus 4
+[INFO ] 2021-11-20 19:23:37.309 [pool-2-thread-4]   Route - 22 people got on the bus 4
+[INFO ] 2021-11-20 19:23:39.299 [pool-2-thread-8]   BusStop - Bus stop 5 finished processing by bus 8
+[INFO ] 2021-11-20 19:23:39.299 [pool-2-thread-8]   Bus - Bus 8 drove away from a bus stop 5 with 31 people
+[INFO ] 2021-11-20 19:23:39.299 [pool-2-thread-8]   Bus - Bus 8 arrived to a bus stop 6 with 31 people
+[INFO ] 2021-11-20 19:23:39.299 [pool-2-thread-8]   BusStop - Bus stop 6 is processing by bus 8
+[INFO ] 2021-11-20 19:23:39.299 [pool-2-thread-8]   Route - 3 people got off the bus 8
+[INFO ] 2021-11-20 19:23:39.299 [pool-2-thread-8]   Route - 5 people got on the bus 8
+[INFO ] 2021-11-20 19:23:39.309 [pool-2-thread-5]   BusStop - Bus stop 6 finished processing by bus 5
+[INFO ] 2021-11-20 19:23:39.309 [pool-2-thread-5]   Bus - Bus 5 drove away from a bus stop 6 with 30 people
+[INFO ] 2021-11-20 19:23:39.309 [pool-2-thread-5]   Route - Bus stop 7 is currently occupied
+[INFO ] 2021-11-20 19:23:40.313 [pool-2-thread-1]   BusStop - Bus stop 2 finished processing by bus 1
+[INFO ] 2021-11-20 19:23:40.313 [pool-2-thread-1]   Bus - Bus 1 drove away from a bus stop 2 with 21 people
+[INFO ] 2021-11-20 19:23:40.313 [pool-2-thread-1]   Bus - Bus 1 arrived to a bus stop 5 with 21 people
+[INFO ] 2021-11-20 19:23:40.313 [pool-2-thread-1]   BusStop - Bus stop 5 is processing by bus 1
+[INFO ] 2021-11-20 19:23:40.314 [pool-2-thread-1]   Route - 0 people got off the bus 1
+[INFO ] 2021-11-20 19:23:40.314 [pool-2-thread-1]   Route - 4 people got on the bus 1
+[INFO ] 2021-11-20 19:23:41.285 [pool-2-thread-3]   BusStop - Bus stop 5 finished processing by bus 3
+[INFO ] 2021-11-20 19:23:41.285 [pool-2-thread-9]   BusStop - Bus stop 7 finished processing by bus 9
+[INFO ] 2021-11-20 19:23:41.285 [pool-2-thread-3]   Bus - Bus 3 drove away from a bus stop 5 with 36 people
+[INFO ] 2021-11-20 19:23:41.285 [pool-2-thread-9]   Route - Bus stop 7 is available now
+[INFO ] 2021-11-20 19:23:41.285 [pool-2-thread-3]   Bus - Bus 3 arrived to a bus stop 4 with 36 people
+[INFO ] 2021-11-20 19:23:41.285 [pool-2-thread-9]   Bus - Bus 9 drove away from a bus stop 7 with 22 people
+[INFO ] 2021-11-20 19:23:41.285 [pool-2-thread-3]   BusStop - Bus stop 4 is processing by bus 3
+[INFO ] 2021-11-20 19:23:41.285 [pool-2-thread-9]   Bus - Bus 9 arrived to a bus stop 1 with 22 people
+[INFO ] 2021-11-20 19:23:41.285 [pool-2-thread-9]   BusStop - Bus stop 1 is processing by bus 9
+[INFO ] 2021-11-20 19:23:41.286 [pool-2-thread-9]   Route - 4 people got off the bus 9
+[INFO ] 2021-11-20 19:23:41.286 [pool-2-thread-9]   Route - 10 people got on the bus 9
+[INFO ] 2021-11-20 19:23:41.285 [pool-2-thread-3]   Route - 18 people got off the bus 3
+[INFO ] 2021-11-20 19:23:41.286 [pool-2-thread-3]   Route - 14 people got on the bus 3
+[INFO ] 2021-11-20 19:23:41.301 [pool-2-thread-8]   BusStop - Bus stop 6 finished processing by bus 8
+[INFO ] 2021-11-20 19:23:41.301 [pool-2-thread-8]   Bus - Bus 8 drove away from a bus stop 6 with 33 people
+[INFO ] 2021-11-20 19:23:41.301 [pool-2-thread-8]   Bus - Bus 8 arrived to a bus stop 3 with 33 people
+[INFO ] 2021-11-20 19:23:41.301 [pool-2-thread-8]   BusStop - Bus stop 3 is processing by bus 8
+[INFO ] 2021-11-20 19:23:41.301 [pool-2-thread-8]   Route - 15 people got off the bus 8
+[INFO ] 2021-11-20 19:23:41.301 [pool-2-thread-8]   Route - 10 people got on the bus 8
+[INFO ] 2021-11-20 19:23:41.317 [pool-2-thread-1]   BusStop - Bus stop 5 finished processing by bus 1
+[INFO ] 2021-11-20 19:23:41.317 [pool-2-thread-1]   Bus - Bus 1 drove away from a bus stop 5 with 25 people
+[INFO ] 2021-11-20 19:23:41.317 [pool-2-thread-1]   Route - Bus stop 1 is currently occupied
+[INFO ] 2021-11-20 19:23:42.304 [pool-2-thread-6]   BusStop - Bus stop 1 finished processing by bus 6
+[INFO ] 2021-11-20 19:23:42.305 [pool-2-thread-6]   Route - Bus stop 1 is available now
+[INFO ] 2021-11-20 19:23:42.306 [pool-2-thread-1]   Bus - Bus 1 arrived to a bus stop 1 with 25 people
+[INFO ] 2021-11-20 19:23:42.306 [pool-2-thread-1]   BusStop - Bus stop 1 is processing by bus 1
+[INFO ] 2021-11-20 19:23:42.306 [pool-2-thread-1]   Route - 17 people got off the bus 1
+[INFO ] 2021-11-20 19:23:42.306 [pool-2-thread-1]   Route - 3 people got on the bus 1
+[INFO ] 2021-11-20 19:23:42.306 [pool-2-thread-6]   Bus - Bus 6 drove away from a bus stop 1 with 35 people
+[INFO ] 2021-11-20 19:23:42.307 [pool-2-thread-6]   Bus - Bus 6 arrived to a bus stop 5 with 35 people
+[INFO ] 2021-11-20 19:23:42.307 [pool-2-thread-6]   BusStop - Bus stop 5 is processing by bus 6
+[INFO ] 2021-11-20 19:23:42.307 [pool-2-thread-6]   Route - 5 people got off the bus 6
+[INFO ] 2021-11-20 19:23:42.307 [pool-2-thread-6]   Route - 0 people got on the bus 6
+[INFO ] 2021-11-20 19:23:43.307 [pool-2-thread-7]   BusStop - Bus stop 1 finished processing by bus 7
+[INFO ] 2021-11-20 19:23:43.308 [pool-2-thread-7]   Route - Bus stop 1 is available now
+[INFO ] 2021-11-20 19:23:43.308 [pool-2-thread-7]   Bus - Bus 7 drove away from a bus stop 1 with 18 people
+[INFO ] 2021-11-20 19:23:43.308 [pool-2-thread-7]   Bus - Bus 7 arrived to a bus stop 6 with 18 people
+[INFO ] 2021-11-20 19:23:43.309 [pool-2-thread-7]   BusStop - Bus stop 6 is processing by bus 7
+[INFO ] 2021-11-20 19:23:43.309 [pool-2-thread-7]   Route - 18 people got off the bus 7
+[INFO ] 2021-11-20 19:23:43.309 [pool-2-thread-7]   Route - 7 people got on the bus 7
+[INFO ] 2021-11-20 19:23:43.323 [pool-2-thread-4]   BusStop - Bus stop 7 finished processing by bus 4
+[INFO ] 2021-11-20 19:23:43.323 [pool-2-thread-4]   Bus - Bus 4 drove away from a bus stop 7 with 38 people
+[INFO ] 2021-11-20 19:23:43.323 [pool-2-thread-4]   Bus - Bus 4 arrived to a bus stop 2 with 38 people
+[INFO ] 2021-11-20 19:23:43.323 [pool-2-thread-4]   BusStop - Bus stop 2 is processing by bus 4
+[INFO ] 2021-11-20 19:23:43.323 [pool-2-thread-4]   Route - 34 people got off the bus 4
+[INFO ] 2021-11-20 19:23:43.324 [pool-2-thread-4]   Route - 40 people got on the bus 4
+[INFO ] 2021-11-20 19:23:44.315 [pool-2-thread-2]   BusStop - Bus stop 7 finished processing by bus 2
+[INFO ] 2021-11-20 19:23:44.315 [pool-2-thread-2]   Bus - Bus 2 drove away from a bus stop 7 with 32 people
+[INFO ] 2021-11-20 19:23:44.315 [pool-2-thread-2]   Bus - Bus 2 arrived to a bus stop 2 with 32 people
+[INFO ] 2021-11-20 19:23:44.315 [pool-2-thread-2]   BusStop - Bus stop 2 is processing by bus 2
+[INFO ] 2021-11-20 19:23:44.315 [pool-2-thread-2]   Route - 28 people got off the bus 2
+[INFO ] 2021-11-20 19:23:44.315 [pool-2-thread-2]   Route - 7 people got on the bus 2
+[INFO ] 2021-11-20 19:23:45.296 [pool-2-thread-3]   BusStop - Bus stop 4 finished processing by bus 3
+[INFO ] 2021-11-20 19:23:45.296 [pool-2-thread-3]   Bus - Bus 3 drove away from a bus stop 4 with 32 people
+[INFO ] 2021-11-20 19:23:45.296 [pool-2-thread-3]   Bus - Bus 3 arrived to a bus stop 2 with 32 people
+[INFO ] 2021-11-20 19:23:45.296 [pool-2-thread-3]   BusStop - Bus stop 2 is processing by bus 3
+[INFO ] 2021-11-20 19:23:45.296 [pool-2-thread-3]   Route - 12 people got off the bus 3
+[INFO ] 2021-11-20 19:23:45.296 [pool-2-thread-3]   Route - 12 people got on the bus 3
+[INFO ] 2021-11-20 19:23:45.311 [pool-2-thread-6]   BusStop - Bus stop 5 finished processing by bus 6
+[INFO ] 2021-11-20 19:23:45.311 [pool-2-thread-6]   Bus - Bus 6 drove away from a bus stop 5 with 30 people
+[INFO ] 2021-11-20 19:23:45.311 [pool-2-thread-6]   Bus - Bus 6 arrived to a bus stop 4 with 30 people
+[INFO ] 2021-11-20 19:23:45.311 [pool-2-thread-6]   BusStop - Bus stop 4 is processing by bus 6
+[INFO ] 2021-11-20 19:23:45.312 [pool-2-thread-6]   Route - 19 people got off the bus 6
+[INFO ] 2021-11-20 19:23:45.312 [pool-2-thread-6]   Route - 27 people got on the bus 6
+[INFO ] 2021-11-20 19:23:46.315 [pool-2-thread-1]   BusStop - Bus stop 1 finished processing by bus 1
+[INFO ] 2021-11-20 19:23:46.315 [pool-2-thread-1]   Bus - Bus 1 drove away from a bus stop 1 with 11 people
+[INFO ] 2021-11-20 19:23:46.315 [pool-2-thread-1]   Bus - Bus 1 arrived to a bus stop 4 with 11 people
+[INFO ] 2021-11-20 19:23:46.315 [pool-2-thread-1]   BusStop - Bus stop 4 is processing by bus 1
+[INFO ] 2021-11-20 19:23:46.315 [pool-2-thread-1]   Route - 4 people got off the bus 1
+[INFO ] 2021-11-20 19:23:46.315 [pool-2-thread-1]   Route - 20 people got on the bus 1
+[INFO ] 2021-11-20 19:23:47.319 [pool-2-thread-2]   BusStop - Bus stop 2 finished processing by bus 2
+[INFO ] 2021-11-20 19:23:47.319 [pool-2-thread-2]   Route - Bus stop 2 is available now
+[INFO ] 2021-11-20 19:23:47.319 [pool-2-thread-2]   Bus - Bus 2 drove away from a bus stop 2 with 11 people
+[INFO ] 2021-11-20 19:23:47.319 [pool-2-thread-2]   Bus - Bus 2 arrived to a bus stop 5 with 11 people
+[INFO ] 2021-11-20 19:23:47.319 [pool-2-thread-2]   BusStop - Bus stop 5 is processing by bus 2
+[INFO ] 2021-11-20 19:23:47.319 [pool-2-thread-2]   Route - 7 people got off the bus 2
+[INFO ] 2021-11-20 19:23:47.319 [pool-2-thread-2]   Route - 5 people got on the bus 2
+[INFO ] 2021-11-20 19:23:48.307 [pool-2-thread-8]   BusStop - Bus stop 3 finished processing by bus 8
+[INFO ] 2021-11-20 19:23:48.307 [pool-2-thread-8]   Bus - Bus 8 drove away from a bus stop 3 with 28 people
+[INFO ] 2021-11-20 19:23:48.307 [pool-2-thread-8]   Bus - Bus 8 arrived to a bus stop 2 with 28 people
+[INFO ] 2021-11-20 19:23:48.307 [pool-2-thread-8]   BusStop - Bus stop 2 is processing by bus 8
+[INFO ] 2021-11-20 19:23:48.308 [pool-2-thread-8]   Route - 19 people got off the bus 8
+[INFO ] 2021-11-20 19:23:48.308 [pool-2-thread-8]   Route - 8 people got on the bus 8
+[INFO ] 2021-11-20 19:23:48.323 [pool-2-thread-7]   BusStop - Bus stop 6 finished processing by bus 7
+[INFO ] 2021-11-20 19:23:48.323 [pool-2-thread-6]   BusStop - Bus stop 4 finished processing by bus 6
+[INFO ] 2021-11-20 19:23:48.323 [pool-2-thread-7]   Bus - Bus 7 drove away from a bus stop 6 with 7 people
+[INFO ] 2021-11-20 19:23:48.323 [pool-2-thread-6]   Bus - Bus 6 drove away from a bus stop 4 with 38 people
+[INFO ] 2021-11-20 19:23:48.323 [pool-2-thread-6]   Route - Bus stop 2 is currently occupied
+[INFO ] 2021-11-20 19:23:48.323 [pool-2-thread-7]   Bus - Bus 7 arrived to a bus stop 4 with 7 people
+[INFO ] 2021-11-20 19:23:48.323 [pool-2-thread-7]   BusStop - Bus stop 4 is processing by bus 7
+[INFO ] 2021-11-20 19:23:48.323 [pool-2-thread-7]   Route - 5 people got off the bus 7
+[INFO ] 2021-11-20 19:23:48.323 [pool-2-thread-7]   Route - 32 people got on the bus 7
+[INFO ] 2021-11-20 19:23:49.295 [pool-2-thread-9]   BusStop - Bus stop 1 finished processing by bus 9
+[INFO ] 2021-11-20 19:23:49.295 [pool-2-thread-9]   Bus - Bus 9 drove away from a bus stop 1 with 28 people
+[INFO ] 2021-11-20 19:23:49.295 [pool-2-thread-9]   Bus - Bus 9 arrived to a bus stop 5 with 28 people
+[INFO ] 2021-11-20 19:23:49.295 [pool-2-thread-9]   BusStop - Bus stop 5 is processing by bus 9
+[INFO ] 2021-11-20 19:23:49.295 [pool-2-thread-9]   Route - 2 people got off the bus 9
+[INFO ] 2021-11-20 19:23:49.295 [pool-2-thread-9]   Route - 3 people got on the bus 9
+[INFO ] 2021-11-20 19:23:49.311 [pool-2-thread-8]   BusStop - Bus stop 2 finished processing by bus 8
+[INFO ] 2021-11-20 19:23:49.311 [pool-2-thread-8]   Route - Bus stop 2 is available now
+[INFO ] 2021-11-20 19:23:49.311 [pool-2-thread-8]   Bus - Bus 8 drove away from a bus stop 2 with 17 people
+[INFO ] 2021-11-20 19:23:49.311 [pool-2-thread-6]   Bus - Bus 6 arrived to a bus stop 2 with 38 people
+[INFO ] 2021-11-20 19:23:49.311 [pool-2-thread-8]   Bus - Bus 8 arrived to a bus stop 1 with 17 people
+[INFO ] 2021-11-20 19:23:49.311 [pool-2-thread-6]   BusStop - Bus stop 2 is processing by bus 6
+[INFO ] 2021-11-20 19:23:49.311 [pool-2-thread-6]   Route - 14 people got off the bus 6
+[INFO ] 2021-11-20 19:23:49.311 [pool-2-thread-8]   BusStop - Bus stop 1 is processing by bus 8
+[INFO ] 2021-11-20 19:23:49.311 [pool-2-thread-6]   Route - 1 people got on the bus 6
+[INFO ] 2021-11-20 19:23:49.312 [pool-2-thread-8]   Route - 8 people got off the bus 8
+[INFO ] 2021-11-20 19:23:49.312 [pool-2-thread-8]   Route - 26 people got on the bus 8
+[INFO ] 2021-11-20 19:23:49.327 [pool-2-thread-2]   BusStop - Bus stop 5 finished processing by bus 2
+[INFO ] 2021-11-20 19:23:49.327 [pool-2-thread-7]   BusStop - Bus stop 4 finished processing by bus 7
+[INFO ] 2021-11-20 19:23:49.327 [pool-2-thread-2]   Bus - Bus 2 drove away from a bus stop 5 with 9 people
+[INFO ] 2021-11-20 19:23:49.327 [pool-2-thread-2]   Bus - Bus 2 completed its route
+[INFO ] 2021-11-20 19:23:49.327 [pool-2-thread-7]   Bus - Bus 7 drove away from a bus stop 4 with 34 people
+[INFO ] 2021-11-20 19:23:49.328 [pool-2-thread-7]   Route - Bus stop 2 is currently occupied
+[INFO ] 2021-11-20 19:23:50.299 [pool-2-thread-9]   BusStop - Bus stop 5 finished processing by bus 9
+[INFO ] 2021-11-20 19:23:50.299 [pool-2-thread-9]   Bus - Bus 9 drove away from a bus stop 5 with 29 people
+[INFO ] 2021-11-20 19:23:50.299 [pool-2-thread-9]   Route - Bus stop 2 is currently occupied
+[INFO ] 2021-11-20 19:23:50.317 [pool-2-thread-1]   BusStop - Bus stop 4 finished processing by bus 1
+[INFO ] 2021-11-20 19:23:50.317 [pool-2-thread-1]   Bus - Bus 1 drove away from a bus stop 4 with 27 people
+[INFO ] 2021-11-20 19:23:50.317 [pool-2-thread-1]   Bus - Bus 1 arrived to a bus stop 7 with 27 people
+[INFO ] 2021-11-20 19:23:50.317 [pool-2-thread-1]   BusStop - Bus stop 7 is processing by bus 1
+[INFO ] 2021-11-20 19:23:50.317 [pool-2-thread-1]   Route - 4 people got off the bus 1
+[INFO ] 2021-11-20 19:23:50.317 [pool-2-thread-1]   Route - 0 people got on the bus 1
+[INFO ] 2021-11-20 19:23:50.331 [pool-2-thread-4]   BusStop - Bus stop 2 finished processing by bus 4
+[INFO ] 2021-11-20 19:23:50.331 [pool-2-thread-4]   Route - Bus stop 2 is available now
+[INFO ] 2021-11-20 19:23:50.331 [pool-2-thread-4]   Bus - Bus 4 drove away from a bus stop 2 with 44 people
+[INFO ] 2021-11-20 19:23:50.331 [pool-2-thread-7]   Bus - Bus 7 arrived to a bus stop 2 with 34 people
+[INFO ] 2021-11-20 19:23:50.331 [pool-2-thread-9]   Route - Bus stop 2 is currently occupied
+[INFO ] 2021-11-20 19:23:50.331 [pool-2-thread-4]   Bus - Bus 4 arrived to a bus stop 6 with 44 people
+[INFO ] 2021-11-20 19:23:50.332 [pool-2-thread-7]   BusStop - Bus stop 2 is processing by bus 7
+[INFO ] 2021-11-20 19:23:50.332 [pool-2-thread-4]   BusStop - Bus stop 6 is processing by bus 4
+[INFO ] 2021-11-20 19:23:50.332 [pool-2-thread-7]   Route - 26 people got off the bus 7
+[INFO ] 2021-11-20 19:23:50.332 [pool-2-thread-4]   Route - 22 people got off the bus 4
+[INFO ] 2021-11-20 19:23:50.332 [pool-2-thread-7]   Route - 30 people got on the bus 7
+[INFO ] 2021-11-20 19:23:50.332 [pool-2-thread-4]   Route - 19 people got on the bus 4
+[INFO ] 2021-11-20 19:23:51.305 [pool-2-thread-3]   BusStop - Bus stop 2 finished processing by bus 3
+[INFO ] 2021-11-20 19:23:51.305 [pool-2-thread-3]   Route - Bus stop 2 is available now
+[INFO ] 2021-11-20 19:23:51.305 [pool-2-thread-3]   Bus - Bus 3 drove away from a bus stop 2 with 32 people
+[INFO ] 2021-11-20 19:23:51.305 [pool-2-thread-9]   Bus - Bus 9 arrived to a bus stop 2 with 29 people
+[INFO ] 2021-11-20 19:23:51.305 [pool-2-thread-9]   BusStop - Bus stop 2 is processing by bus 9
+[INFO ] 2021-11-20 19:23:51.305 [pool-2-thread-3]   Bus - Bus 3 arrived to a bus stop 3 with 32 people
+[INFO ] 2021-11-20 19:23:51.305 [pool-2-thread-9]   Route - 27 people got off the bus 9
+[INFO ] 2021-11-20 19:23:51.305 [pool-2-thread-3]   BusStop - Bus stop 3 is processing by bus 3
+[INFO ] 2021-11-20 19:23:51.305 [pool-2-thread-9]   Route - 24 people got on the bus 9
+[INFO ] 2021-11-20 19:23:51.305 [pool-2-thread-3]   Route - 2 people got off the bus 3
+[INFO ] 2021-11-20 19:23:51.306 [pool-2-thread-3]   Route - 4 people got on the bus 3
+[INFO ] 2021-11-20 19:23:52.314 [pool-2-thread-3]   BusStop - Bus stop 3 finished processing by bus 3
+[INFO ] 2021-11-20 19:23:52.314 [pool-2-thread-3]   Bus - Bus 3 drove away from a bus stop 3 with 34 people
+[INFO ] 2021-11-20 19:23:52.314 [pool-2-thread-3]   Bus - Bus 3 arrived to a bus stop 6 with 34 people
+[INFO ] 2021-11-20 19:23:52.314 [pool-2-thread-3]   BusStop - Bus stop 6 is processing by bus 3
+[INFO ] 2021-11-20 19:23:52.314 [pool-2-thread-3]   Route - 34 people got off the bus 3
+[INFO ] 2021-11-20 19:23:52.314 [pool-2-thread-3]   Route - 23 people got on the bus 3
+[INFO ] 2021-11-20 19:23:53.312 [pool-2-thread-9]   BusStop - Bus stop 2 finished processing by bus 9
+[INFO ] 2021-11-20 19:23:53.312 [pool-2-thread-9]   Route - Bus stop 2 is available now
+[INFO ] 2021-11-20 19:23:53.312 [pool-2-thread-9]   Bus - Bus 9 drove away from a bus stop 2 with 26 people
+[INFO ] 2021-11-20 19:23:53.312 [pool-2-thread-9]   Bus - Bus 9 arrived to a bus stop 4 with 26 people
+[INFO ] 2021-11-20 19:23:53.312 [pool-2-thread-9]   BusStop - Bus stop 4 is processing by bus 9
+[INFO ] 2021-11-20 19:23:53.312 [pool-2-thread-9]   Route - 14 people got off the bus 9
+[INFO ] 2021-11-20 19:23:53.313 [pool-2-thread-9]   Route - 7 people got on the bus 9
+[INFO ] 2021-11-20 19:23:53.344 [pool-2-thread-7]   BusStop - Bus stop 2 finished processing by bus 7
+[INFO ] 2021-11-20 19:23:53.344 [pool-2-thread-7]   Bus - Bus 7 drove away from a bus stop 2 with 38 people
+[INFO ] 2021-11-20 19:23:53.344 [pool-2-thread-7]   Bus - Bus 7 arrived to a bus stop 3 with 38 people
+[INFO ] 2021-11-20 19:23:53.344 [pool-2-thread-7]   BusStop - Bus stop 3 is processing by bus 7
+[INFO ] 2021-11-20 19:23:53.344 [pool-2-thread-7]   Route - 16 people got off the bus 7
+[INFO ] 2021-11-20 19:23:53.344 [pool-2-thread-7]   Route - 23 people got on the bus 7
+[INFO ] 2021-11-20 19:23:54.318 [pool-2-thread-9]   BusStop - Bus stop 4 finished processing by bus 9
+[INFO ] 2021-11-20 19:23:54.318 [pool-2-thread-3]   BusStop - Bus stop 6 finished processing by bus 3
+[INFO ] 2021-11-20 19:23:54.318 [pool-2-thread-9]   Bus - Bus 9 drove away from a bus stop 4 with 19 people
+[INFO ] 2021-11-20 19:23:54.318 [pool-2-thread-3]   Bus - Bus 3 drove away from a bus stop 6 with 23 people
+[INFO ] 2021-11-20 19:23:54.318 [pool-2-thread-3]   Bus - Bus 3 completed its route
+[INFO ] 2021-11-20 19:23:54.318 [pool-2-thread-9]   Bus - Bus 9 completed its route
+[INFO ] 2021-11-20 19:23:54.320 [pool-2-thread-1]   BusStop - Bus stop 7 finished processing by bus 1
+[INFO ] 2021-11-20 19:23:54.320 [pool-2-thread-1]   Bus - Bus 1 drove away from a bus stop 7 with 23 people
+[INFO ] 2021-11-20 19:23:54.320 [pool-2-thread-1]   Bus - Bus 1 completed its route
+[INFO ] 2021-11-20 19:23:54.334 [pool-2-thread-4]   BusStop - Bus stop 6 finished processing by bus 4
+[INFO ] 2021-11-20 19:23:54.334 [pool-2-thread-4]   Bus - Bus 4 drove away from a bus stop 6 with 41 people
+[INFO ] 2021-11-20 19:23:54.334 [pool-2-thread-4]   Bus - Bus 4 arrived to a bus stop 4 with 41 people
+[INFO ] 2021-11-20 19:23:54.334 [pool-2-thread-4]   BusStop - Bus stop 4 is processing by bus 4
+[INFO ] 2021-11-20 19:23:54.334 [pool-2-thread-4]   Route - 25 people got off the bus 4
+[INFO ] 2021-11-20 19:23:54.335 [pool-2-thread-4]   Route - 6 people got on the bus 4
+[INFO ] 2021-11-20 19:23:57.318 [pool-2-thread-8]   BusStop - Bus stop 1 finished processing by bus 8
+[INFO ] 2021-11-20 19:23:57.318 [pool-2-thread-6]   BusStop - Bus stop 2 finished processing by bus 6
+[INFO ] 2021-11-20 19:23:57.318 [pool-2-thread-8]   Bus - Bus 8 drove away from a bus stop 1 with 35 people
+[INFO ] 2021-11-20 19:23:57.318 [pool-2-thread-6]   Bus - Bus 6 drove away from a bus stop 2 with 25 people
+[INFO ] 2021-11-20 19:23:57.318 [pool-2-thread-8]   Bus - Bus 8 completed its route
+[INFO ] 2021-11-20 19:23:57.318 [pool-2-thread-6]   Bus - Bus 6 completed its route
+[INFO ] 2021-11-20 19:24:00.346 [pool-2-thread-4]   BusStop - Bus stop 4 finished processing by bus 4
+[INFO ] 2021-11-20 19:24:00.346 [pool-2-thread-4]   Bus - Bus 4 drove away from a bus stop 4 with 22 people
+[INFO ] 2021-11-20 19:24:00.346 [pool-2-thread-4]   Bus - Bus 4 completed its route
+[INFO ] 2021-11-20 19:24:02.350 [pool-2-thread-7]   BusStop - Bus stop 3 finished processing by bus 7
+[INFO ] 2021-11-20 19:24:02.350 [pool-2-thread-7]   Bus - Bus 7 drove away from a bus stop 3 with 45 people
+[INFO ] 2021-11-20 19:24:02.350 [pool-2-thread-7]   Bus - Bus 7 completed its route

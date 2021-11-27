@@ -23,7 +23,6 @@ public class Bus implements Runnable {
         this.currentPeopleAmount = currentPeopleAmount;
         this.busStopNumbers = busStopNumbers;
         busId = BusIdGenerator.generateId();
-        state = State.WAITING;
     }
 
     public long getBusId() {
@@ -42,20 +41,32 @@ public class Bus implements Runnable {
         return MAX_CAPACITY;
     }
 
+    public State getState() {
+        return state;
+    }
+
+    public void setState(State state) {
+        this.state = state;
+    }
+
     @Override
     public void run() {
         LOGGER.info("Bus {} started its route", busId);
-        state = State.RUNNING;
 
         Route route = Route.getInstance();
         for (long busStopNumber : busStopNumbers) {
-            BusStop busStop = route.obtainBusStop(busStopNumber);
-            LOGGER.info("Bus {} arrived to a bus stop {} with {} people", busId, busStop.getBusStopId(), currentPeopleAmount);
+            BusStop busStop = new BusStop();
+            try {
+                busStop = route.obtainBusStop(busStopNumber, this);
+                LOGGER.info("Bus {} arrived to a bus stop {} with {} people",
+                        busId, busStop.getBusStopId(), currentPeopleAmount);
 
-            busStop.processBus(this);
-
-            route.releaseBusStop(busStop);
-            LOGGER.info("Bus {} drove away from a bus stop {} with {} people", busId, busStop.getBusStopId(), currentPeopleAmount);
+                busStop.processBus(this);
+            } finally {
+                route.releaseBusStop(busStop);
+                LOGGER.info("Bus {} drove away from a bus stop {} with {} people",
+                        busId, busStop.getBusStopId(), currentPeopleAmount);
+            }
         }
 
         LOGGER.info("Bus {} completed its route", busId);

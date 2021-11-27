@@ -16,29 +16,23 @@ public class Route {
     private static final String RESOURCE_FILE_NAME = "data/routeData.properties";
     private static final String BUS_STOP_AMOUNT_PROPERTY = "bus_stop_amount";
     private static final String BUS_STOP_CAPACITY_PROPERTY = "bus_stop_capacity";
+    private static final int DEFAULT_BUS_STOP_AMOUNT = 5;
+    private static final int DEFAULT_BUS_STOP_CAPACITY = 2;
     private static final AtomicBoolean isInitialised = new AtomicBoolean(false);
-    private final Map<Long, Lock> locks = new HashMap<>();
+    private static final Lock lock = new ReentrantLock();
     private final Map<Long, Condition> conditions = new HashMap<>();
+    private final Map<Long, Semaphore> semaphores = new HashMap<>();
     private final List<BusStop> availableBusStops = new ArrayList<>();
     private final List<BusStop> occupiedBusStops = new ArrayList<>();
-    private final int BUS_STOP_AMOUNT;
-    private final Map<Long, Semaphore> semaphores = new HashMap<>();
     private static Route instance;
+    private int busStopAmount;
 
     private Route() {
-        Properties properties = new Properties();
-        try {
-            properties.load(getClass().getClassLoader().getResourceAsStream(RESOURCE_FILE_NAME));
-        } catch (IOException exception) {
-            LOGGER.error("Error was occurred while reading file \"{}\"", RESOURCE_FILE_NAME);
-        }
-        BUS_STOP_AMOUNT = Integer.parseInt(properties.getProperty(BUS_STOP_AMOUNT_PROPERTY));
-        final int busStopCapacity = Integer.parseInt(properties.getProperty(BUS_STOP_CAPACITY_PROPERTY));
-        for (int i = 0; i < BUS_STOP_AMOUNT; i++) {
+        int busStopCapacity = retrieveBusStopProperties();
+        for (int i = 0; i < busStopAmount; i++) {
             BusStop busStop = new BusStop(busStopCapacity);
             availableBusStops.add(busStop);
-            locks.put(busStop.getBusStopId(), new ReentrantLock());
-            conditions.put(busStop.getBusStopId(), locks.get(busStop.getBusStopId()).newCondition());
+            conditions.put(busStop.getBusStopId(), lock.newCondition());
             semaphores.put(busStop.getBusStopId(), new Semaphore(busStop.getMaxBusCapacity(), true));
         }
     }
@@ -52,36 +46,40 @@ public class Route {
         return instance;
     }
 
-    public BusStop obtainBusStop(long busStopNumber) {
+    public BusStop obtainBusStop(long busStopNumber, Bus bus) {
         try {
-            locks.get(busStopNumber).lock();
-            BusStop busStop = null;
+            lock.lock();
+            bus.setState(Bus.State.WAITING);
             try {
-                while (!semaphores.get(busStopNumber).tryAcquire()) {
-                    LOGGER.info("Bus stop {} is currently occupied", busStopNumber);
-                    conditions.get(busStopNumber).await();
+                while (bus.getState().equals(Bus.State.WAITING)) {
+                    if (semaphores.get(busStopNumber).tryAcquire()) {
+                        bus.setState(Bus.State.RUNNING);
+                    } else {
+                        LOGGER.info("Bus stop {} is currently occupied", busStopNumber);
+                        conditions.get(busStopNumber).await();
+                    }
                 }
-                busStop = availableBusStops.stream()
-                        .filter(s -> s.getBusStopId() == busStopNumber)
-                        .findFirst()
-                        .get();
             } catch (InterruptedException exception) {
                 LOGGER.error("Error was found while processing a bus route: " + exception);
                 Thread.currentThread().interrupt();
             }
+            BusStop busStop = availableBusStops.stream()
+                    .filter(s -> s.getBusStopId() == busStopNumber)
+                    .findFirst()
+                    .orElse(new BusStop());
             if (semaphores.get(busStopNumber).availablePermits() == 0) {
                 availableBusStops.remove(busStop);
                 occupiedBusStops.add(busStop);
             }
             return busStop;
         } finally {
-            locks.get(busStopNumber).unlock();
+            lock.unlock();
         }
     }
 
     public void releaseBusStop(BusStop busStop) {
         try {
-            locks.get(busStop.getBusStopId()).lock();
+            lock.lock();
             semaphores.get(busStop.getBusStopId()).release();
             if (!availableBusStops.contains(busStop)) {
                 occupiedBusStops.remove(busStop);
@@ -90,7 +88,7 @@ public class Route {
                 LOGGER.info("Bus stop {} is available now", busStop.getBusStopId());
             }
         } finally {
-            locks.get(busStop.getBusStopId()).unlock();
+            lock.unlock();
         }
     }
 
@@ -108,5 +106,24 @@ public class Route {
         bus.setCurrentPeopleAmount(bus.getCurrentPeopleAmount() + increasedPeopleAmount);
         LOGGER.info("{} people got on the bus {}", increasedPeopleAmount, bus.getBusId());
         return increasedPeopleAmount;
+    }
+
+    public int retrieveBusStopProperties() {
+        int busStopCapacity;
+        try {
+            Properties properties = new Properties();
+            properties.load(getClass().getClassLoader().getResourceAsStream(RESOURCE_FILE_NAME));
+            busStopAmount = Integer.parseInt(properties.getProperty(BUS_STOP_AMOUNT_PROPERTY,
+                    String.valueOf(DEFAULT_BUS_STOP_AMOUNT)));
+            busStopCapacity = Integer.parseInt(properties.getProperty(BUS_STOP_CAPACITY_PROPERTY,
+                    String.valueOf(DEFAULT_BUS_STOP_CAPACITY)));
+        } catch (IOException exception) {
+            LOGGER.error("Error was occurred while reading file \"{}\"", RESOURCE_FILE_NAME);
+            LOGGER.warn("Route will be initialised with default values of bus stop amount({}) and bus stop capacity({})",
+                    DEFAULT_BUS_STOP_AMOUNT, DEFAULT_BUS_STOP_CAPACITY);
+            busStopAmount = DEFAULT_BUS_STOP_AMOUNT;
+            busStopCapacity = DEFAULT_BUS_STOP_CAPACITY;
+        }
+        return busStopCapacity;
     }
 }
